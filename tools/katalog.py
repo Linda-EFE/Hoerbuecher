@@ -52,8 +52,8 @@ def natuerlich(name):
 
 SPRECHER_MUSTER = re.compile(
     r"^\s*(?:Read (?:in (?:the original )?German |in German )?by|"
-    r"(?:Auf Deutsch )?[Gg]elesen (?:auf Deutsch |in Deutsch )?(?:für LibriVox )?von|"
-    r"Auf Deutsch gelesen von)\s+(.{1,150}?)(?:\.(?=\s|$)|\s*¶)", re.S)
+    r"(?:Auf Deutsch )?[Gg]elesen (?:auf |in )?(?:[Dd]eutsch )?(?:für LibriVox )?von|"
+    r"Auf Deutsch gelesen von)\s+(.{1,600}?)(?:\.(?=\s|$)|\s*¶)", re.S)
 
 def sprecher_und_text(beschreibung, autor):
     """Trennt den LibriVox-Vorspann ('LibriVox recording of ... Read by X.') von der Beschreibung."""
@@ -73,8 +73,10 @@ def sprecher_und_text(beschreibung, autor):
     sprecher = ""
     t = re.sub(r"^[\s¶.,;:–-]+", "", t)
     m = re.match(r"\s*(?:Read|Gelesen|Auf Deutsch gelesen)[^.]{0,40}?(?:volunteers|Freiwillige\w*)\s*\.?", t, re.I)
+    if not m:
+        m = re.match(r"\s*(?:Read in German|(?:Auf Deutsch )?[Gg]elesen(?: auf| in)? [Dd]eutsch)( mit verteilten Rollen)?\s*(?:\.|¶)", t)
     if m:
-        sprecher = "LibriVox-Freiwillige"
+        sprecher = "mehrere LibriVox-Sprecher" if "Rollen" in m.group(0) else "LibriVox-Freiwillige"
         t = t[m.end():]
         m = None
     else:
