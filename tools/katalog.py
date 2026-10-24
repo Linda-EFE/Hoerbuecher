@@ -53,21 +53,25 @@ def natuerlich(name):
 SPRECHER_MUSTER = re.compile(
     r"^\s*(?:Read (?:in (?:the original )?German |in German )?by|"
     r"(?:Auf Deutsch )?[Gg]elesen (?:auf Deutsch |in Deutsch )?(?:für LibriVox )?von|"
-    r"Auf Deutsch gelesen von)\s+(.{1,150}?)\.(?=\s|$)", re.S)
+    r"Auf Deutsch gelesen von)\s+(.{1,150}?)(?:\.(?=\s|$)|\s*¶)", re.S)
 
 def sprecher_und_text(beschreibung, autor):
     """Trennt den LibriVox-Vorspann ('LibriVox recording of ... Read by X.') von der Beschreibung."""
-    t = text(beschreibung)
+    roh = beschreibung if not isinstance(beschreibung, list) else " ".join(map(str, beschreibung))
+    roh = re.sub(r"<br\s*/?>|</p>|</div>|\n", " ¶ ", str(roh or ""), flags=re.I)
+    t = text(roh)
     t = re.sub(r"For (?:more )?free audio ?books.*?librivox\.?\s*org\s*\.?", " ", t, flags=re.I)
     t = re.sub(r"\s+", " ", t).strip()
     if re.match(r"\s*libri\s*vox", t, re.I):
         pos = t.find(autor, 0, 400) if autor else -1
         if pos >= 0:
-            punkt = t.find(".", pos + len(autor))
+            kandidaten = [i for i in (t.find(".", pos + len(autor)), t.find("¶", pos + len(autor))) if i >= 0]
+            punkt = min(kandidaten) if kandidaten else -1
             t = t[punkt + 1:] if punkt >= 0 else t[pos + len(autor):]
         else:
             t = re.sub(r"^\s*Libri\s*[Vv]ox[^.]{0,250}\.", "", t)
     sprecher = ""
+    t = re.sub(r"^[\s¶.,;:–-]+", "", t)
     m = re.match(r"\s*(?:Read|Gelesen|Auf Deutsch gelesen)[^.]{0,40}?(?:volunteers|Freiwillige\w*)\s*\.?", t, re.I)
     if m:
         sprecher = "LibriVox-Freiwillige"
@@ -80,9 +84,13 @@ def sprecher_und_text(beschreibung, autor):
         t = t[m.end():]
     if re.search(r"freiwillig|volunteer", sprecher, re.I):
         sprecher = "LibriVox-Freiwillige"
-    if len(sprecher) > 100:
-        sprecher = sprecher[:100].rsplit(";", 1)[0].rsplit(",", 1)[0] + " u. a."
+    namen = [n.strip() for n in re.split(r"[;,]| und ", sprecher) if n.strip()]
+    if len(namen) > 3:
+        sprecher = ", ".join(namen[:3]) + " u. a."
+    elif len(sprecher) > 80:
+        sprecher = sprecher[:80].rsplit(" ", 1)[0] + " …"
     t = re.split(r"\(Summary|Summary by|\(Zusammenfassung|Zusammenfassung (?:von|aus|nach)|\(Text aus|For further information", t)[0]
+    t = re.sub(r"\s*¶\s*", " ", t)
     t = re.sub(r"^[\s\-–.;,]+", "", t).strip()
     if len(t) > 700:
         t = t[:700].rsplit(" ", 1)[0] + " …"

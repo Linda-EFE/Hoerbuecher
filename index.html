@@ -172,7 +172,7 @@
 
 
   /* ---------- Suche & Filter ---------- */
-  .filter { margin-top: 18px; display: grid; gap: 12px; }
+  .filter { margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .suchfeld { position: relative; display: block; }
   .suchfeld svg { position: absolute; left: 14px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
   .suchfeld input {
@@ -189,13 +189,13 @@
     padding: 7px 14px; font-size: 14px; color: var(--muted); white-space: nowrap;
   }
   .chip.an { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
-  .filter-zeile { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .filter-zeile { display: flex; gap: 8px; align-items: center; }
   .segment { display: inline-flex; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
-  .segment button { background: none; border: 0; padding: 6px 11px; border-radius: 7px; font-size: 14px; color: var(--muted); }
+  .segment button { background: none; border: 0; padding: 6px 10px; border-radius: 7px; font-size: 14px; color: var(--muted); }
   .segment button.an { background: var(--card-hover); color: var(--text); font-weight: 600; }
   select.sortierung {
     margin-left: auto; background: var(--card); color: var(--text); border: 1px solid var(--line);
-    border-radius: 10px; padding: 8px 10px; font: inherit; font-size: 14px;
+    border-radius: 10px; padding: 8px 6px; font: inherit; font-size: 14px; min-width: 0; max-width: 42%;
   }
   .anzahl { color: var(--muted); font-size: 13px; }
   .marke {
@@ -241,7 +241,7 @@
       <div class="filter-zeile">
         <div class="segment" id="quelle" role="group" aria-label="Quelle">
           <button data-q="alle" class="an">Alle</button>
-          <button data-q="lokal">Im Repository</button>
+          <button data-q="lokal">Gespeichert</button>
           <button data-q="online">Online</button>
         </div>
         <select class="sortierung" id="sortierung" aria-label="Sortierung">
@@ -456,7 +456,7 @@
       <div class="info">
         <div class="autor">${esc(b.autor)}</div>
         <div class="titel">${esc(b.titel)}</div>
-        <div class="meta-zeile">${b.kapitel.length} Titel${b.gesamt ? ' · ' + dauerText(b.gesamt) : ''}<span class="marke${b.lokal ? ' lokal' : ''}">${b.lokal ? 'Im Repository' : 'Online'}</span></div>
+        <div class="meta-zeile">${b.kapitel.length} Titel${b.gesamt ? ' · ' + dauerText(b.gesamt) : ''}<span class="marke${b.lokal ? ' lokal' : ''}">${b.lokal ? 'Gespeichert' : 'Online'}</span></div>
         <button class="knopf" data-id="${esc(b.id)}">
           <svg viewBox="0 0 24 24"><path d="M7 4.5v15L19.5 12z" fill="currentColor"/></svg>${label}
         </button>
