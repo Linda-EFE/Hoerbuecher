@@ -1,0 +1,11 @@
+name: Hörbücher suchen
+on:
+  workflow_dispatch:
+  push:
+    paths: ["tools/suche.py", ".github/workflows/suche.yml"]
+jobs:
+  suche:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/suche.py
