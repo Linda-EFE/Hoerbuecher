@@ -4,13 +4,12 @@
       "id": "max_und_moritz_librivox",
       "titel": "Max und Moritz",
       "autor": "Wilhelm Busch",
-      "beschreibung": "LibriVox recording of Max und Moritz, by Wilhelm Busch. Read in German by Mikki Starzmann-Kassi.",
-      "sprecher": "LibriVox-Freiwillige",
+      "beschreibung": "Die berühmte Bubengeschichte in sieben Streichen: Max und Moritz ärgern Witwe Bolte, Schneider Böck, Lehrer Lämpel und das ganze Dorf, bis ihr letzter Streich böse endet. Gelesen von Mikki Starzmann-Kassi.",
       "quelle": "https://archive.org/details/max_und_moritz_librivox",
       "cover": "audio/max_und_moritz_librivox/cover.jpg",
       "kapitel": [
         {
-          "titel": "Max und Moritz 01-07",
+          "titel": "Max und Moritz – alle sieben Streiche",
           "datei": "audio/max_und_moritz_librivox/01.mp3",
           "dauer": 1224
         }
@@ -19,14 +18,13 @@
     {
       "id": "struwwelpeter_de2_librivox",
       "titel": "Der Struwwelpeter",
-      "autor": "Heinrich Hoffman",
-      "beschreibung": "LibriVox recording of Der Struwwelpeter, by Heinrich Hoffmann. Read in the original German by Roman Buettner. Der Struwwelpeter, zuerst erschienen als \"Lustige Geschichten und drollige Bilder mit 15 schön kolorierten Tafeln für Kinder von 3-6 Jahren\", wurde 1845 von Heinrich Hoffmann als ein Kinderbuch für seine eigene Familie geschrieben. Es wurde als eine illustrierte Sammlung von Kindergeschichten sehr bekannt durch seine erste englische Übersetzung im Jahre 1848. Das Buch wird oft als brutal angesehen, da die Kinder in den Geschichten nicht notwendigerweise gut behandelt werden. Trotzdem h",
-      "sprecher": "LibriVox-Freiwillige",
+      "autor": "Heinrich Hoffmann",
+      "beschreibung": "Die lustigen und drolligen Bildergeschichten von 1845: vom Struwwelpeter, dem bösen Friederich, Paulinchen mit dem Feuerzeug, dem Suppen-Kaspar und dem Zappel-Philipp. Gelesen von Roman Büttner.",
       "quelle": "https://archive.org/details/struwwelpeter_de2_librivox",
       "cover": "audio/struwwelpeter_de2_librivox/cover.jpg",
       "kapitel": [
         {
-          "titel": "Der Struwwelpeter, oder: Lustige Geschichten und drollige Bilder",
+          "titel": "Der Struwwelpeter – alle Geschichten",
           "datei": "audio/struwwelpeter_de2_librivox/01.mp3",
           "dauer": 889
         }
@@ -34,202 +32,201 @@
     },
     {
       "id": "grimm_maerchen_1_librivox",
-      "titel": "Märchen",
-      "autor": "Gebrueder Grimm",
-      "beschreibung": "Librivox recording of Märchen , von den Gebrüdern Grimm. Anfang des 19. Jahrhunderts begannen die Brüder Jacob und Wilhelm Grimm, traditionelle, bisher vor allem mündlich weitergegebene Erzählungen zusammenzutragen. Diese Sammlung ist als die Märchen der Gebrüder Grimm weltbekannt geworden und umfaßt so berühmte Geschichten wie Rapunzel, Hänsel und Gretel, Rumpelstilzchen, Rotkäppchen und viele andere. Diese Märchen wurden später stark editiert und 'beschönt'. Die hier vorliegenden Versionen entsprechen aber stärker den originalen, teils drastischen Fassungen. (Zusammenfassung von Rainer)",
-      "sprecher": "LibriVox-Freiwillige",
+      "titel": "Grimms Märchen",
+      "autor": "Brüder Grimm",
+      "beschreibung": "38 Kinder- und Hausmärchen, die Jacob und Wilhelm Grimm Anfang des 19. Jahrhunderts gesammelt haben – von Hänsel und Gretel, Frau Holle und Rotkäppchen bis zu Rumpelstilzchen und König Drosselbart. Gelesen von verschiedenen LibriVox-Sprechern.",
       "quelle": "https://archive.org/details/grimm_maerchen_1_librivox",
       "cover": "audio/grimm_maerchen_1_librivox/cover.jpg",
       "kapitel": [
         {
-          "titel": "219_vom_fischer_und_seiner_frau",
-          "datei": "audio/grimm_maerchen_1_librivox/01.mp3",
-          "dauer": 1313
-        },
-        {
-          "titel": "220_vom_klugen_schneiderlein",
-          "datei": "audio/grimm_maerchen_1_librivox/02.mp3",
-          "dauer": 469
-        },
-        {
-          "titel": "222_von_dem_maeuschen_voegelchen_und_der_bratwurst",
-          "datei": "audio/grimm_maerchen_1_librivox/03.mp3",
-          "dauer": 263
-        },
-        {
-          "titel": "114_erbsenprobe",
+          "titel": "Die Erbsenprobe",
           "datei": "audio/grimm_maerchen_1_librivox/04.mp3",
           "dauer": 313
         },
         {
-          "titel": "120_haselrute",
+          "titel": "Die Haselrute",
           "datei": "audio/grimm_maerchen_1_librivox/05.mp3",
           "dauer": 103
         },
         {
-          "titel": "122_kornaehre",
+          "titel": "Die Kornähre",
           "datei": "audio/grimm_maerchen_1_librivox/06.mp3",
           "dauer": 112
         },
         {
-          "titel": "123_kristallkugel",
+          "titel": "Die Kristallkugel",
           "datei": "audio/grimm_maerchen_1_librivox/07.mp3",
           "dauer": 415
         },
         {
-          "titel": "124_die_lebenszeit",
+          "titel": "Die Lebenszeit",
           "datei": "audio/grimm_maerchen_1_librivox/08.mp3",
           "dauer": 258
         },
         {
-          "titel": "126_die_nixe_im_teich",
+          "titel": "Die Nixe im Teich",
           "datei": "audio/grimm_maerchen_1_librivox/09.mp3",
           "dauer": 795
         },
         {
-          "titel": "130_schlickerlinge",
+          "titel": "Die Schlickerlinge",
           "datei": "audio/grimm_maerchen_1_librivox/10.mp3",
           "dauer": 100
         },
         {
-          "titel": "131_scholle",
+          "titel": "Die Scholle",
           "datei": "audio/grimm_maerchen_1_librivox/11.mp3",
           "dauer": 123
         },
         {
-          "titel": "132_sterntaler",
+          "titel": "Die Sterntaler",
           "datei": "audio/grimm_maerchen_1_librivox/12.mp3",
           "dauer": 146
         },
         {
-          "titel": "134_wassernixe",
+          "titel": "Die Wassernixe",
           "datei": "audio/grimm_maerchen_1_librivox/13.mp3",
           "dauer": 146
         },
         {
-          "titel": "135_die_wichtelmaenner",
+          "titel": "Die Wichtelmänner",
           "datei": "audio/grimm_maerchen_1_librivox/14.mp3",
           "dauer": 227
         },
         {
-          "titel": "144_drei_maennlein_im_walde",
+          "titel": "Die drei Männlein im Walde",
           "datei": "audio/grimm_maerchen_1_librivox/15.mp3",
           "dauer": 772
         },
         {
-          "titel": "145_drei_schlangenblatter",
+          "titel": "Die drei Schlangenblätter",
           "datei": "audio/grimm_maerchen_1_librivox/16.mp3",
           "dauer": 503
         },
         {
-          "titel": "146_drei_spinnerinnen",
+          "titel": "Die drei Spinnerinnen",
           "datei": "audio/grimm_maerchen_1_librivox/17.mp3",
           "dauer": 355
         },
         {
-          "titel": "148_drei_granen_zweige",
+          "titel": "Die drei grünen Zweige",
           "datei": "audio/grimm_maerchen_1_librivox/18.mp3",
           "dauer": 404
         },
         {
-          "titel": "160_die_sieben_raben",
+          "titel": "Die sieben Raben",
           "datei": "audio/grimm_maerchen_1_librivox/19.mp3",
           "dauer": 397
         },
         {
-          "titel": "163_die_ungleichen_kinder_evas",
+          "titel": "Die ungleichen Kinder Evas",
           "datei": "audio/grimm_maerchen_1_librivox/20.mp3",
           "dauer": 335
         },
         {
-          "titel": "166_weisse_schlange",
+          "titel": "Die weiße Schlange",
           "datei": "audio/grimm_maerchen_1_librivox/21.mp3",
           "dauer": 585
         },
         {
-          "titel": "171_zwoelf_brueder",
+          "titel": "Die zwölf Brüder",
           "datei": "audio/grimm_maerchen_1_librivox/22.mp3",
           "dauer": 717
         },
         {
-          "titel": "180_frau_holle",
+          "titel": "Frau Holle",
           "datei": "audio/grimm_maerchen_1_librivox/23.mp3",
           "dauer": 368
         },
         {
-          "titel": "185_haensel_und_gretel",
+          "titel": "Hänsel und Gretel",
           "datei": "audio/grimm_maerchen_1_librivox/24.mp3",
           "dauer": 990
         },
         {
-          "titel": "188_hans_im_glueck",
+          "titel": "Hans im Glück",
           "datei": "audio/grimm_maerchen_1_librivox/25.mp3",
           "dauer": 803
         },
         {
-          "titel": "191_jorinde_und_joringel",
+          "titel": "Jorinde und Joringel",
           "datei": "audio/grimm_maerchen_1_librivox/26.mp3",
           "dauer": 389
         },
         {
-          "titel": "193_koenig_drosselbart",
+          "titel": "König Drosselbart",
           "datei": "audio/grimm_maerchen_1_librivox/27.mp3",
           "dauer": 552
         },
         {
-          "titel": "194_katze_und_maus_in_gesellschaft",
+          "titel": "Katze und Maus in Gesellschaft",
           "datei": "audio/grimm_maerchen_1_librivox/28.mp3",
           "dauer": 401
         },
         {
-          "titel": "200_fuerchten_lernen",
+          "titel": "Von einem, der auszog, das Fürchten zu lernen",
           "datei": "audio/grimm_maerchen_1_librivox/29.mp3",
           "dauer": 1435
         },
         {
-          "titel": "202_meister_pfriem",
+          "titel": "Meister Pfriem",
           "datei": "audio/grimm_maerchen_1_librivox/30.mp3",
           "dauer": 521
         },
         {
-          "titel": "203_muttergottesglaeschen",
+          "titel": "Muttergottesgläschen",
           "datei": "audio/grimm_maerchen_1_librivox/31.mp3",
           "dauer": 91
         },
         {
-          "titel": "206_rapunzel",
+          "titel": "Rapunzel",
           "datei": "audio/grimm_maerchen_1_librivox/32.mp3",
           "dauer": 542
         },
         {
-          "titel": "207_rohrdommel_und_wiedehopf",
+          "titel": "Rohrdommel und Wiedehopf",
           "datei": "audio/grimm_maerchen_1_librivox/33.mp3",
           "dauer": 124
         },
         {
-          "titel": "208_rotkaeppchen",
+          "titel": "Rotkäppchen",
           "datei": "audio/grimm_maerchen_1_librivox/34.mp3",
           "dauer": 565
         },
         {
-          "titel": "209_rumpelstilzchen",
+          "titel": "Rumpelstilzchen",
           "datei": "audio/grimm_maerchen_1_librivox/35.mp3",
           "dauer": 449
         },
         {
-          "titel": "210_schneeweisschen_und_rosenrot",
+          "titel": "Schneeweißchen und Rosenrot",
           "datei": "audio/grimm_maerchen_1_librivox/36.mp3",
           "dauer": 972
         },
         {
-          "titel": "214_spindel_weberschiffchen_und_nadel",
+          "titel": "Spindel, Weberschiffchen und Nadel",
           "datei": "audio/grimm_maerchen_1_librivox/37.mp3",
           "dauer": 437
         },
         {
-          "titel": "215_strohhalm_kohle_und_bohne",
+          "titel": "Strohhalm, Kohle und Bohne",
           "datei": "audio/grimm_maerchen_1_librivox/38.mp3",
           "dauer": 213
+        },
+        {
+          "titel": "Vom Fischer und seiner Frau",
+          "datei": "audio/grimm_maerchen_1_librivox/01.mp3",
+          "dauer": 1313
+        },
+        {
+          "titel": "Vom klugen Schneiderlein",
+          "datei": "audio/grimm_maerchen_1_librivox/02.mp3",
+          "dauer": 469
+        },
+        {
+          "titel": "Von dem Mäuschen, Vögelchen und der Bratwurst",
+          "datei": "audio/grimm_maerchen_1_librivox/03.mp3",
+          "dauer": 263
         }
       ]
     },
@@ -237,78 +234,77 @@
       "id": "peterchens_mondfahrt_librivox",
       "titel": "Peterchens Mondfahrt",
       "autor": "Gerdt von Bassewitz",
-      "beschreibung": "Librivox recording of Peterchens Mondfahrt , by Gerdt von Bassewitz. Read in German by Franziska Nelson Peterchens Mondfahrt ist ein Maerchen für Kinder von Gerdt von Bassewitz. Es handelt von den Abenteuern des Maikaefers Herr Sumsemann, der zusammen mit den Menschenkindern Peter und Anneliese zum Mond fliegt, um von dort sein verlorengegangenes sechstes Beinchen zu holen. 1911 erschien die Geschichte zuerst als Theaterstueck, 1915 dann als Buch mit Illustrationen von Hans Baluschek. Die Geschichte gilt heute als ein Klassiker der deutschen Kinder- und Jugendliteratur. (Zusammenfassung aus Wi",
-      "sprecher": "LibriVox-Freiwillige",
+      "beschreibung": "Peterchen und Anneliese fliegen mit dem Maikäfer Herrn Sumsemann zum Mond, um sein verlorenes sechstes Beinchen zurückzuholen – vorbei an Sternenwiese, Milchstraße und dem Schloss der Nachtfee. Gelesen von Franziska Nelson.",
       "quelle": "https://archive.org/details/peterchens_mondfahrt_librivox",
       "cover": "audio/peterchens_mondfahrt_librivox/cover.jpg",
       "kapitel": [
         {
-          "titel": "01 - Die Geschichte der Sumsemanns",
+          "titel": "Die Geschichte der Sumsemanns",
           "datei": "audio/peterchens_mondfahrt_librivox/01.mp3",
           "dauer": 530
         },
         {
-          "titel": "02 - In der Kinderstube",
+          "titel": "In der Kinderstube",
           "datei": "audio/peterchens_mondfahrt_librivox/02.mp3",
           "dauer": 947
         },
         {
-          "titel": "03 - Der Flug nach der Sternenwiese",
+          "titel": "Der Flug nach der Sternenwiese",
           "datei": "audio/peterchens_mondfahrt_librivox/03.mp3",
           "dauer": 367
         },
         {
-          "titel": "04 - Die Sternenwiese",
+          "titel": "Die Sternenwiese",
           "datei": "audio/peterchens_mondfahrt_librivox/04.mp3",
           "dauer": 1051
         },
         {
-          "titel": "05 - Die Schlittenfahrt auf der Milchstrasse",
+          "titel": "Die Schlittenfahrt auf der Milchstraße",
           "datei": "audio/peterchens_mondfahrt_librivox/05.mp3",
           "dauer": 445
         },
         {
-          "titel": "06 - Das Schloss der Nachtfee",
+          "titel": "Das Schloss der Nachtfee",
           "datei": "audio/peterchens_mondfahrt_librivox/06.mp3",
           "dauer": 1694
         },
         {
-          "titel": "07 - Die Ankunft der Kinder im Schloss der Nachtfee",
+          "titel": "Die Ankunft der Kinder im Schloss der Nachtfee",
           "datei": "audio/peterchens_mondfahrt_librivox/07.mp3",
           "dauer": 845
         },
         {
-          "titel": "08 - Der Ritt auf dem grossen Baeren",
+          "titel": "Der Ritt auf dem großen Bären",
           "datei": "audio/peterchens_mondfahrt_librivox/08.mp3",
           "dauer": 295
         },
         {
-          "titel": "09 - Die Weihnachtswiese",
+          "titel": "Die Weihnachtswiese",
           "datei": "audio/peterchens_mondfahrt_librivox/09.mp3",
           "dauer": 929
         },
         {
-          "titel": "10 - Das Osternest",
+          "titel": "Das Osternest",
           "datei": "audio/peterchens_mondfahrt_librivox/10.mp3",
           "dauer": 308
         },
         {
-          "titel": "11 - Die Mondkanone",
+          "titel": "Die Mondkanone",
           "datei": "audio/peterchens_mondfahrt_librivox/11.mp3",
           "dauer": 645
         },
         {
-          "titel": "12 - Der Kampf mit dem Mondmann",
+          "titel": "Der Kampf mit dem Mondmann",
           "datei": "audio/peterchens_mondfahrt_librivox/12.mp3",
           "dauer": 1107
         },
         {
-          "titel": "13 - Das Beinchen",
+          "titel": "Das Beinchen",
           "datei": "audio/peterchens_mondfahrt_librivox/13.mp3",
           "dauer": 435
         },
         {
-          "titel": "14 - Wieder daheim",
+          "titel": "Wieder daheim",
           "datei": "audio/peterchens_mondfahrt_librivox/14.mp3",
           "dauer": 411
         }
@@ -318,23 +314,22 @@
       "id": "verwandlung_mw_0811_librivox",
       "titel": "Die Verwandlung",
       "autor": "Franz Kafka",
-      "beschreibung": "LibriVox recording of Die Verwandlung , by Franz Kafka. \"Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt...\" So beginnt Kafka diesen Klassiker und beschreibt in seinem typischen Stil wie sich die plötzliche Verwandlung auf das weitere Leben Gregor Samsas auswirkt. (Zusammenfassung von Markus Wachenheim) Read in German by Markus Wachenheim .",
-      "sprecher": "LibriVox-Freiwillige",
+      "beschreibung": "Der Handlungsreisende Gregor Samsa wacht eines Morgens als riesiges Ungeziefer auf. Kafkas berühmte Erzählung von 1915 über Entfremdung, Pflicht und eine Familie, die mit dem Unfassbaren leben muss.",
       "quelle": "https://archive.org/details/verwandlung_mw_0811_librivox",
       "cover": "audio/verwandlung_mw_0811_librivox/cover.jpg",
       "kapitel": [
         {
-          "titel": "Abschnitt 1",
+          "titel": "Erster Teil",
           "datei": "audio/verwandlung_mw_0811_librivox/01.mp3",
           "dauer": 2465
         },
         {
-          "titel": "Abschnitt 2",
+          "titel": "Zweiter Teil",
           "datei": "audio/verwandlung_mw_0811_librivox/02.mp3",
           "dauer": 2663
         },
         {
-          "titel": "Abschnitt 3",
+          "titel": "Dritter Teil",
           "datei": "audio/verwandlung_mw_0811_librivox/03.mp3",
           "dauer": 2554
         }
@@ -344,23 +339,22 @@
       "id": "kleider_machen_leute_librivox",
       "titel": "Kleider machen Leute",
       "autor": "Gottfried Keller",
-      "beschreibung": "Librivox recording of „Kleider machen Leute”, by Gottfried Keller. Read in German by Stefan Schmelz. Die Erzählung „Kleider machen Leute” erschien 1874 im zweiten Band des Novellenzyklus „Die Leute von Seldwyla”. Ein arbeitsloser Schneidergeselle darf unterwegs in einer vornehmen Kutsche Platz nehmen. Der im kleinen Orte Goldach dem herrschaftlichen Wagen entsteigende Schneider wird vom Kutscher als Herr aristokratischer Herkunft ausgegeben. Der Schneider, der durch sein melancholisches Aussehen, vor allem aber durch seinen kostbar wirkenden Mantel und seine Pelzmütze Aufsehen erregt, gilt bal",
-      "sprecher": "LibriVox-Freiwillige",
+      "beschreibung": "Der arme Schneidergeselle Wenzel wird wegen seines feinen Mantels in Goldach für einen polnischen Grafen gehalten – und schafft es nicht, den Irrtum aufzuklären. Kellers Novelle von 1874, gelesen von Stefan Schmelz.",
       "quelle": "https://archive.org/details/kleider_machen_leute_librivox",
       "cover": "audio/kleider_machen_leute_librivox/cover.jpg",
       "kapitel": [
         {
-          "titel": "Teil 1",
+          "titel": "Erster Teil",
           "datei": "audio/kleider_machen_leute_librivox/01.mp3",
           "dauer": 2087
         },
         {
-          "titel": "Teil 2",
+          "titel": "Zweiter Teil",
           "datei": "audio/kleider_machen_leute_librivox/02.mp3",
           "dauer": 1584
         },
         {
-          "titel": "Teil 3",
+          "titel": "Dritter Teil",
           "datei": "audio/kleider_machen_leute_librivox/03.mp3",
           "dauer": 2041
         }

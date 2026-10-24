@@ -2,7 +2,7 @@ name: Hörbücher laden
 on:
   workflow_dispatch:
   push:
-    paths: ["tools/hoerbuecher.txt", "tools/laden.py", ".github/workflows/laden.yml"]
+    paths: ["tools/hoerbuecher.txt", "tools/laden.py", "tools/anpassungen.json", ".github/workflows/laden.yml"]
 permissions:
   contents: write
 concurrency: hoerbuecher-laden
