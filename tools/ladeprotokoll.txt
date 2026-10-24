@@ -56,12 +56,4 @@
     12.mp3 Der Kampf mit dem Mondmann
     13.mp3 Das Beinchen
     14.mp3 Wieder daheim
-==> verwandlung_mw_0811_librivox
-    01.mp3 Abschnitt 1
-    02.mp3 Abschnitt 2
-    03.mp3 Abschnitt 3
-==> kleider_machen_leute_librivox
-    01.mp3 Teil 1
-    02.mp3 Teil 2
-    03.mp3 Teil 3
-Fertig: 6 Hörbücher
+Fertig: 4 Hörbücher
