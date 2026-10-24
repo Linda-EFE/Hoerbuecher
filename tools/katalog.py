@@ -9,6 +9,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOKAL = os.path.join(ROOT, "tools", "hoerbuecher.txt")
 AUSGABE = os.path.join(ROOT, "katalog-online.json")
 KINDER = os.path.join(ROOT, "tools", "kinder.txt")
+ANPASSUNGEN = os.path.join(ROOT, "tools", "anpassungen_online.json")
 
 def lade_kinderliste():
     """Nur Hörbücher aus tools/kinder.txt (geeignet für Kinder bis 10 Jahre) kommen in den Katalog."""
@@ -62,7 +63,7 @@ def natuerlich(name):
     return [int(x) if x.isdigit() else x.lower() for x in re.split(r"(\d+)", name)]
 
 SPRECHER_MUSTER = re.compile(
-    r"^\s*(?:Read (?:in (?:the original )?German |in German )?by|"
+    r"^\s*(?:Read (?:in (?:the original )?(?:German|Russian) )?by|Читается на русском языке|"
     r"(?:Auf Deutsch )?[Gg]elesen (?:auf |in )?(?:[Dd]eutsch )?(?:für LibriVox )?von|"
     r"Auf Deutsch gelesen von)\s+(.{1,600}?)(?:\.(?=\s|$)|\s*¶)", re.S)
 
@@ -127,7 +128,7 @@ def kategorie(titel, subjekt):
 
 def suche():
     ergebnis, seite = [], 1
-    q = "collection:librivoxaudio AND language:(German OR deu OR ger OR Deutsch)"
+    q = "collection:librivoxaudio AND language:(German OR deu OR ger OR Deutsch OR Russian OR rus)"
     while True:
         params = urllib.parse.urlencode([
             ("q", q), ("fl[]", "identifier"), ("fl[]", "downloads"),
@@ -148,7 +149,7 @@ def buch(doc):
     md = meta.get("metadata", {})
     dateien = meta.get("files", [])
     sprache = text(md.get("language")).lower()
-    if sprache and not re.search(r"german|deu|ger|deutsch", sprache):
+    if sprache and not re.search(r"german|deu|ger|deutsch|russian|rus", sprache):
         return None
     mp3s = [f for f in dateien if f.get("format") == "64Kbps MP3"]
     if not mp3s:
@@ -191,8 +192,12 @@ def main():
     print("Gefunden:", len(treffer), flush=True)
     with ThreadPoolExecutor(8) as ex:
         buecher = [b for b in ex.map(buch, treffer) if b]
+    anp = json.load(open(ANPASSUNGEN, encoding="utf-8")) if os.path.exists(ANPASSUNGEN) else {}
     for b in buecher:
         b["kategorie"] = kinder[b["id"]]
+        b["sprache"] = "de"
+        for feld, wert in anp.get(b["id"], {}).items():
+            b[feld] = wert
     buecher.sort(key=lambda b: -b["beliebt"])
     daten = {
         "hinweis": "Nur Hörbücher für Kinder bis 10 Jahre (Liste: tools/kinder.txt). Nur Links. Die Audiodateien werden direkt vom Internet Archive (archive.org) gestreamt.",

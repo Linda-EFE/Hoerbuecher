@@ -401,7 +401,7 @@
   function zeigeKategorien() {
     const zaehler = {};
     buecher.forEach(b => { zaehler[b.kategorie] = (zaehler[b.kategorie] || 0) + 1; });
-    const reihenfolge = ['Märchen', 'Kindergeschichten', 'Bildergeschichten & Reime', 'Weihnachten'];
+    const reihenfolge = ['Märchen', 'Kindergeschichten', 'Bildergeschichten & Reime', 'Weihnachten', 'Русские сказки'];
     const namen = ['Alle', ...reihenfolge.filter(k => zaehler[k]), ...Object.keys(zaehler).filter(k => !reihenfolge.includes(k))];
     $('kategorien').innerHTML = namen.map(k =>
       `<button class="chip${k === filter.kategorie ? ' an' : ''}" data-k="${esc(k)}">${esc(k)}${k !== 'Alle' ? ` <span style="opacity:.7">${zaehler[k]}</span>` : ''}</button>`).join('');
@@ -454,9 +454,9 @@
     return `<li class="buch">
       <div class="cover"><img src="${esc(coverVon(b))}" data-id="${esc(b.id)}" alt="Cover: ${esc(b.titel)}" loading="lazy"></div>
       <div class="info">
-        <div class="autor">${esc(b.autor)}</div>
-        <div class="titel">${esc(b.titel)}</div>
-        <div class="meta-zeile">${b.kapitel.length} Titel${b.gesamt ? ' · ' + dauerText(b.gesamt) : ''}<span class="marke${b.lokal ? ' lokal' : ''}">${b.lokal ? 'Gespeichert' : 'Online'}</span></div>
+        <div class="autor" lang="${b.sprache}">${esc(b.autor)}</div>
+        <div class="titel" lang="${b.sprache}">${esc(b.titel)}</div>
+        <div class="meta-zeile">${b.kapitel.length} Titel${b.gesamt ? ' · ' + dauerText(b.gesamt) : ''}<span class="marke${b.lokal ? ' lokal' : ''}">${b.lokal ? 'Gespeichert' : 'Online'}</span>${b.sprache === 'ru' ? '<span class="marke">Russisch</span>' : ''}</div>
         <button class="knopf" data-id="${esc(b.id)}">
           <svg viewBox="0 0 24 24"><path d="M7 4.5v15L19.5 12z" fill="currentColor"/></svg>${label}
         </button>
@@ -484,8 +484,9 @@
     $('d-cover').src = coverVon(b); $('d-cover').dataset.id = b.id; $('d-cover').alt = 'Cover: ' + b.titel;
     $('d-autor').textContent = b.autor;
     $('d-titel').textContent = b.titel;
+    ['d-autor', 'd-titel', 'd-beschreibung', 'd-kapitel', 'd-sprecher'].forEach(id => $(id).lang = b.sprache);
     $('d-meta').textContent = `${b.kapitel.length} Titel${b.gesamt ? ' · ' + dauerText(b.gesamt) : ''}`;
-    $('d-sprecher').textContent = b.sprecher ? 'Gelesen von ' + b.sprecher : '';
+    $('d-sprecher').textContent = b.sprecher ? (b.sprache === 'ru' ? 'Читает: ' : 'Gelesen von ') + b.sprecher : '';
     const besch = $('d-beschreibung');
     besch.textContent = b.beschreibung || '';
     besch.classList.add('zu');
@@ -573,6 +574,7 @@
     $('player').classList.add('sichtbar');
     $('p-cover').src = coverVon(b);
     $('p-titel').textContent = k.titel;
+    $('p-titel').lang = $('p-buch').lang = b.sprache;
     $('p-buch').textContent = `${b.titel} · Titel ${i + 1} von ${b.kapitel.length}`;
     $('b-naechster').disabled = i >= b.kapitel.length - 1;
     zeigeKapitel();
@@ -716,7 +718,7 @@
     return b;
   }
   const lokal = fetch('hoerbuecher.json', { cache: 'no-cache' }).then(r => r.json())
-    .then(d => (d.hoerbuecher || []).map(b => vorbereiten({ ...b, lokal: true, beliebt: Infinity, kategorie: b.kategorie || 'Kindergeschichten' })))
+    .then(d => (d.hoerbuecher || []).map(b => vorbereiten({ ...b, sprache: 'de', lokal: true, beliebt: Infinity, kategorie: b.kategorie || 'Kindergeschichten' })))
     .catch(() => []);
   const online = fetch('katalog-online.json', { cache: 'no-cache' }).then(r => r.json())
     .then(d => (d.hoerbuecher || []).map(b => {
@@ -724,7 +726,7 @@
       const pfad = n => basis + n.split('/').map(encodeURIComponent).join('/');
       return vorbereiten({
         id: b.id, titel: b.titel, autor: b.autor, sprecher: b.sprecher, beschreibung: b.beschreibung,
-        kategorie: b.kategorie, beliebt: b.beliebt, lokal: false,
+        kategorie: b.kategorie, beliebt: b.beliebt, lokal: false, sprache: b.sprache || 'de',
         quelle: 'https://archive.org/details/' + b.id,
         cover: b.cover ? pfad(b.cover) : null,
         kapitel: b.kapitel.map(k => ({ titel: k.t, datei: pfad(k.d), dauer: k.s })),

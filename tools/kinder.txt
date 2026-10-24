@@ -71,3 +71,12 @@ komischelyrikbuschtucholsky_1308_librivox | Bildergeschichten & Reime   # Komisc
 weihnachtsabend_geistergeschichte_1012_librivox | Weihnachten   # Der Weihnachtsabend - Eine Geistergeschichte (Charles Dickens)
 weihnachtsabend_1411_librivox | Weihnachten   # Der Weihnachtsabend (Eine Geistergeschichte) (Version 2) (Charles Dickens)
 derweihnachtsabendversion3_2412_librivox | Weihnachten   # Der Weihnachtsabend (Version 3) (Charles Dickens)
+
+# --- Russische Hörbücher (auf Russisch gelesen) ---
+aesops_fables_russian_0905_librivox | Русские сказки   # Basni Ezopa (Tolstoi)
+russianfairytales1_2007_librivox | Русские сказки   # Afanasjew 1
+russianfairytales2_2103_librivox | Русские сказки   # Afanasjew 2
+russianfairytales3_2412_librivox | Русские сказки   # Afanasjew 3
+konekgorbunok_1603_librivox | Русские сказки   # Konjok-Gorbunok
+yaponskienarodnyeskazki_1607_librivox | Русские сказки   # Japanische Volksmärchen auf Russisch
+selkuncikimysinyjcar_2210_librivox | Русские сказки   # Nussknacker auf Russisch

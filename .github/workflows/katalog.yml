@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "17 3 * * 1"   # jeden Montag früh: neue LibriVox-Titel übernehmen
   push:
-    paths: ["tools/katalog.py", "tools/hoerbuecher.txt", "tools/kinder.txt", ".github/workflows/katalog.yml"]
+    paths: ["tools/katalog.py", "tools/hoerbuecher.txt", "tools/kinder.txt", "tools/anpassungen_online.json", ".github/workflows/katalog.yml"]
 permissions:
   contents: write
 concurrency: hoerbuecher-katalog
