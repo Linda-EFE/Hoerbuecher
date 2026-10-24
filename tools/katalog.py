@@ -197,7 +197,11 @@ def main():
         b["kategorie"] = kinder[b["id"]]
         b["sprache"] = "de"
         for feld, wert in anp.get(b["id"], {}).items():
-            b[feld] = wert
+            if feld == "kapitel_titel":
+                for k, t in zip(b["kapitel"], wert):
+                    k["t"] = t
+            else:
+                b[feld] = wert
     buecher.sort(key=lambda b: -b["beliebt"])
     daten = {
         "hinweis": "Nur Hörbücher für Kinder bis 10 Jahre (Liste: tools/kinder.txt). Nur Links. Die Audiodateien werden direkt vom Internet Archive (archive.org) gestreamt.",
