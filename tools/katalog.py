@@ -200,8 +200,14 @@ def main():
             if feld == "kapitel_titel":
                 for k, t in zip(b["kapitel"], wert):
                     k["t"] = t
+            elif feld == "kapitel_auswahl":
+                pass  # wird unten angewendet, nachdem alle Titel gesetzt sind
             else:
                 b[feld] = wert
+    for b in buecher:
+        nummern = anp.get(b["id"], {}).get("kapitel_auswahl")
+        if nummern:   # nur ausgewählte Kapitel (Nummern wie in der Original-Aufnahme)
+            b["kapitel"] = [b["kapitel"][n - 1] for n in nummern if 0 < n <= len(b["kapitel"])]
     buecher.sort(key=lambda b: -b["beliebt"])
     daten = {
         "hinweis": "Nur Hörbücher für Kinder bis 10 Jahre (Liste: tools/kinder.txt). Nur Links. Die Audiodateien werden direkt vom Internet Archive (archive.org) gestreamt.",
