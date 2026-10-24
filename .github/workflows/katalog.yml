@@ -1,0 +1,23 @@
+name: Online-Katalog aktualisieren
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"   # jeden Montag früh: neue LibriVox-Titel übernehmen
+  push:
+    paths: ["tools/katalog.py", "tools/hoerbuecher.txt", ".github/workflows/katalog.yml"]
+permissions:
+  contents: write
+concurrency: hoerbuecher-katalog
+jobs:
+  katalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/katalog.py > tools/katalogprotokoll.txt 2>&1 || true
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add katalog-online.json tools/katalogprotokoll.txt
+          git commit -m "Online-Katalog aktualisiert" || exit 0
+          git pull --rebase
+          git push
