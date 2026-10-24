@@ -1,0 +1,21 @@
+name: Hörbücher laden
+on:
+  workflow_dispatch:
+  push:
+    paths: ["tools/hoerbuecher.txt", "tools/laden.py", ".github/workflows/laden.yml"]
+permissions:
+  contents: write
+concurrency: hoerbuecher-laden
+jobs:
+  laden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/laden.py > tools/ladeprotokoll.txt 2>&1 || (cat tools/ladeprotokoll.txt; true)
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio hoerbuecher.json tools/ladeprotokoll.txt
+          git commit -m "Hörbücher geladen" || exit 0
+          git pull --rebase
+          git push
