@@ -156,6 +156,7 @@ for ident in ids:
         "titel": a.get("titel") or text(md.get("title")),
         "autor": a.get("autor") or text(md.get("creator")),
         "beschreibung": a.get("beschreibung") or kurzbeschreibung(md.get("description")),
+        "kategorie": a.get("kategorie", "Romane & Erzählungen"),
         "quelle": "https://archive.org/details/" + ident,
         "cover": cover,
         "kapitel": kapitel,

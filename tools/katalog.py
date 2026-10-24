@@ -41,23 +41,49 @@ def sekunden(laenge):
         return 0
 
 def schoener_titel(t):
-    t = re.sub(r"^\s*\d+\s*[-_.:–]\s*", "", t)
+    t = re.sub(r"^\s*(?:\d+\s*[-_:–]\s*|\d{2,3}\s+)(?=\D)", "", t)
     if "_" in t and " " not in t:
         t = t.replace("_", " ")
     t = t.strip(" -–")
     return t[:1].upper() + t[1:]
 
-def sprecher_und_text(beschreibung):
-    """Trennt 'LibriVox recording of ... Read in German by X.' von der eigentlichen Beschreibung."""
+def natuerlich(name):
+    return [int(x) if x.isdigit() else x.lower() for x in re.split(r"(\d+)", name)]
+
+SPRECHER_MUSTER = re.compile(
+    r"^\s*(?:Read (?:in (?:the original )?German |in German )?by|"
+    r"(?:Auf Deutsch )?[Gg]elesen (?:auf Deutsch |in Deutsch )?(?:für LibriVox )?von|"
+    r"Auf Deutsch gelesen von)\s+(.{1,150}?)\.(?=\s|$)", re.S)
+
+def sprecher_und_text(beschreibung, autor):
+    """Trennt den LibriVox-Vorspann ('LibriVox recording of ... Read by X.') von der Beschreibung."""
     t = text(beschreibung)
+    t = re.sub(r"For (?:more )?free audio ?books.*?librivox\.?\s*org\s*\.?", " ", t, flags=re.I)
+    t = re.sub(r"\s+", " ", t).strip()
+    if re.match(r"\s*libri\s*vox", t, re.I):
+        pos = t.find(autor, 0, 400) if autor else -1
+        if pos >= 0:
+            punkt = t.find(".", pos + len(autor))
+            t = t[punkt + 1:] if punkt >= 0 else t[pos + len(autor):]
+        else:
+            t = re.sub(r"^\s*Libri\s*[Vv]ox[^.]{0,250}\.", "", t)
     sprecher = ""
-    m = re.search(r"Read (?:in (?:the original )?German |in German )?by ([^.()]+?)\s*[.(]", t, re.I)
+    m = re.match(r"\s*(?:Read|Gelesen|Auf Deutsch gelesen)[^.]{0,40}?(?:volunteers|Freiwillige\w*)\s*\.?", t, re.I)
     if m:
-        sprecher = m.group(1).strip()
-    t = re.sub(r"^\s*Libri[Vv]ox recording of .*?(?:Read [^.]*?by [^.]+\.)", "", t, flags=re.S)
-    t = re.sub(r"^\s*Libri[Vv]ox recording of [^.]+\.", "", t)
-    t = re.split(r"\(Summary|Summary by|\(Zusammenfassung|Zusammenfassung von|For further information", t)[0]
-    t = t.strip(" -–")
+        sprecher = "LibriVox-Freiwillige"
+        t = t[m.end():]
+        m = None
+    else:
+        m = SPRECHER_MUSTER.match(t)
+    if m:
+        sprecher = m.group(1).strip(" ,;")
+        t = t[m.end():]
+    if re.search(r"freiwillig|volunteer", sprecher, re.I):
+        sprecher = "LibriVox-Freiwillige"
+    if len(sprecher) > 100:
+        sprecher = sprecher[:100].rsplit(";", 1)[0].rsplit(",", 1)[0] + " u. a."
+    t = re.split(r"\(Summary|Summary by|\(Zusammenfassung|Zusammenfassung (?:von|aus|nach)|\(Text aus|For further information", t)[0]
+    t = re.sub(r"^[\s\-–.;,]+", "", t).strip()
     if len(t) > 700:
         t = t[:700].rsplit(" ", 1)[0] + " …"
     return sprecher, t
@@ -108,10 +134,7 @@ def buch(doc):
         mp3s = [f for f in dateien if f.get("name", "").lower().endswith(".mp3")]
     if not mp3s:
         return None
-    def tracknr(f):
-        n = re.sub(r"\D", "", str(f.get("track", "")).split("/")[0])
-        return int(n) if n else 10**6
-    mp3s.sort(key=lambda f: (tracknr(f), f["name"]))
+    mp3s.sort(key=lambda f: natuerlich(f["name"]))
     kapitel = []
     for i, f in enumerate(mp3s, 1):
         kapitel.append({"t": schoener_titel(text(f.get("title"))) or "Teil %d" % i,
@@ -124,7 +147,7 @@ def buch(doc):
     autor = text(md.get("creator")) or "Verschiedene"
     if autor.lower() in ("various", "unknown"):
         autor = {"various": "Verschiedene", "unknown": "Unbekannt"}[autor.lower()]
-    sprecher, beschreibung = sprecher_und_text(md.get("description"))
+    sprecher, beschreibung = sprecher_und_text(md.get("description"), text(md.get("creator")))
     return {
         "id": ident,
         "titel": titel,

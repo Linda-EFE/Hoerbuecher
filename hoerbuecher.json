@@ -13,7 +13,8 @@
           "datei": "audio/max_und_moritz_librivox/01.mp3",
           "dauer": 1224
         }
-      ]
+      ],
+      "kategorie": "Kinder & Märchen"
     },
     {
       "id": "struwwelpeter_de2_librivox",
@@ -28,7 +29,8 @@
           "datei": "audio/struwwelpeter_de2_librivox/01.mp3",
           "dauer": 889
         }
-      ]
+      ],
+      "kategorie": "Kinder & Märchen"
     },
     {
       "id": "grimm_maerchen_1_librivox",
@@ -228,7 +230,8 @@
           "datei": "audio/grimm_maerchen_1_librivox/03.mp3",
           "dauer": 263
         }
-      ]
+      ],
+      "kategorie": "Kinder & Märchen"
     },
     {
       "id": "peterchens_mondfahrt_librivox",
@@ -308,7 +311,8 @@
           "datei": "audio/peterchens_mondfahrt_librivox/14.mp3",
           "dauer": 411
         }
-      ]
+      ],
+      "kategorie": "Kinder & Märchen"
     },
     {
       "id": "verwandlung_mw_0811_librivox",
@@ -333,7 +337,8 @@
           "datei": "audio/verwandlung_mw_0811_librivox/03.mp3",
           "dauer": 2554
         }
-      ]
+      ],
+      "kategorie": "Romane & Erzählungen"
     },
     {
       "id": "kleider_machen_leute_librivox",
@@ -358,7 +363,8 @@
           "datei": "audio/kleider_machen_leute_librivox/03.mp3",
           "dauer": 2041
         }
-      ]
+      ],
+      "kategorie": "Romane & Erzählungen"
     }
   ]
 }

@@ -3,90 +3,288 @@
     "titel": "Max und Moritz",
     "autor": "Wilhelm Busch",
     "beschreibung": "Die berühmte Bubengeschichte in sieben Streichen: Max und Moritz ärgern Witwe Bolte, Schneider Böck, Lehrer Lämpel und das ganze Dorf, bis ihr letzter Streich böse endet. Gelesen von Mikki Starzmann-Kassi.",
-    "kapitel": [[1, "Max und Moritz – alle sieben Streiche"]]
+    "kapitel": [
+      [
+        1,
+        "Max und Moritz – alle sieben Streiche"
+      ]
+    ],
+    "kategorie": "Kinder & Märchen"
   },
   "struwwelpeter_de2_librivox": {
     "titel": "Der Struwwelpeter",
     "autor": "Heinrich Hoffmann",
     "beschreibung": "Die lustigen und drolligen Bildergeschichten von 1845: vom Struwwelpeter, dem bösen Friederich, Paulinchen mit dem Feuerzeug, dem Suppen-Kaspar und dem Zappel-Philipp. Gelesen von Roman Büttner.",
-    "kapitel": [[1, "Der Struwwelpeter – alle Geschichten"]]
+    "kapitel": [
+      [
+        1,
+        "Der Struwwelpeter – alle Geschichten"
+      ]
+    ],
+    "kategorie": "Kinder & Märchen"
   },
   "grimm_maerchen_1_librivox": {
     "titel": "Grimms Märchen",
     "autor": "Brüder Grimm",
     "beschreibung": "38 Kinder- und Hausmärchen, die Jacob und Wilhelm Grimm Anfang des 19. Jahrhunderts gesammelt haben – von Hänsel und Gretel, Frau Holle und Rotkäppchen bis zu Rumpelstilzchen und König Drosselbart. Gelesen von verschiedenen LibriVox-Sprechern.",
     "kapitel": [
-      [4, "Die Erbsenprobe"],
-      [5, "Die Haselrute"],
-      [6, "Die Kornähre"],
-      [7, "Die Kristallkugel"],
-      [8, "Die Lebenszeit"],
-      [9, "Die Nixe im Teich"],
-      [10, "Die Schlickerlinge"],
-      [11, "Die Scholle"],
-      [12, "Die Sterntaler"],
-      [13, "Die Wassernixe"],
-      [14, "Die Wichtelmänner"],
-      [15, "Die drei Männlein im Walde"],
-      [16, "Die drei Schlangenblätter"],
-      [17, "Die drei Spinnerinnen"],
-      [18, "Die drei grünen Zweige"],
-      [19, "Die sieben Raben"],
-      [20, "Die ungleichen Kinder Evas"],
-      [21, "Die weiße Schlange"],
-      [22, "Die zwölf Brüder"],
-      [23, "Frau Holle"],
-      [24, "Hänsel und Gretel"],
-      [25, "Hans im Glück"],
-      [26, "Jorinde und Joringel"],
-      [27, "König Drosselbart"],
-      [28, "Katze und Maus in Gesellschaft"],
-      [29, "Von einem, der auszog, das Fürchten zu lernen"],
-      [30, "Meister Pfriem"],
-      [31, "Muttergottesgläschen"],
-      [32, "Rapunzel"],
-      [33, "Rohrdommel und Wiedehopf"],
-      [34, "Rotkäppchen"],
-      [35, "Rumpelstilzchen"],
-      [36, "Schneeweißchen und Rosenrot"],
-      [37, "Spindel, Weberschiffchen und Nadel"],
-      [38, "Strohhalm, Kohle und Bohne"],
-      [1, "Vom Fischer und seiner Frau"],
-      [2, "Vom klugen Schneiderlein"],
-      [3, "Von dem Mäuschen, Vögelchen und der Bratwurst"]
-    ]
+      [
+        4,
+        "Die Erbsenprobe"
+      ],
+      [
+        5,
+        "Die Haselrute"
+      ],
+      [
+        6,
+        "Die Kornähre"
+      ],
+      [
+        7,
+        "Die Kristallkugel"
+      ],
+      [
+        8,
+        "Die Lebenszeit"
+      ],
+      [
+        9,
+        "Die Nixe im Teich"
+      ],
+      [
+        10,
+        "Die Schlickerlinge"
+      ],
+      [
+        11,
+        "Die Scholle"
+      ],
+      [
+        12,
+        "Die Sterntaler"
+      ],
+      [
+        13,
+        "Die Wassernixe"
+      ],
+      [
+        14,
+        "Die Wichtelmänner"
+      ],
+      [
+        15,
+        "Die drei Männlein im Walde"
+      ],
+      [
+        16,
+        "Die drei Schlangenblätter"
+      ],
+      [
+        17,
+        "Die drei Spinnerinnen"
+      ],
+      [
+        18,
+        "Die drei grünen Zweige"
+      ],
+      [
+        19,
+        "Die sieben Raben"
+      ],
+      [
+        20,
+        "Die ungleichen Kinder Evas"
+      ],
+      [
+        21,
+        "Die weiße Schlange"
+      ],
+      [
+        22,
+        "Die zwölf Brüder"
+      ],
+      [
+        23,
+        "Frau Holle"
+      ],
+      [
+        24,
+        "Hänsel und Gretel"
+      ],
+      [
+        25,
+        "Hans im Glück"
+      ],
+      [
+        26,
+        "Jorinde und Joringel"
+      ],
+      [
+        27,
+        "König Drosselbart"
+      ],
+      [
+        28,
+        "Katze und Maus in Gesellschaft"
+      ],
+      [
+        29,
+        "Von einem, der auszog, das Fürchten zu lernen"
+      ],
+      [
+        30,
+        "Meister Pfriem"
+      ],
+      [
+        31,
+        "Muttergottesgläschen"
+      ],
+      [
+        32,
+        "Rapunzel"
+      ],
+      [
+        33,
+        "Rohrdommel und Wiedehopf"
+      ],
+      [
+        34,
+        "Rotkäppchen"
+      ],
+      [
+        35,
+        "Rumpelstilzchen"
+      ],
+      [
+        36,
+        "Schneeweißchen und Rosenrot"
+      ],
+      [
+        37,
+        "Spindel, Weberschiffchen und Nadel"
+      ],
+      [
+        38,
+        "Strohhalm, Kohle und Bohne"
+      ],
+      [
+        1,
+        "Vom Fischer und seiner Frau"
+      ],
+      [
+        2,
+        "Vom klugen Schneiderlein"
+      ],
+      [
+        3,
+        "Von dem Mäuschen, Vögelchen und der Bratwurst"
+      ]
+    ],
+    "kategorie": "Kinder & Märchen"
   },
   "peterchens_mondfahrt_librivox": {
     "titel": "Peterchens Mondfahrt",
     "autor": "Gerdt von Bassewitz",
     "beschreibung": "Peterchen und Anneliese fliegen mit dem Maikäfer Herrn Sumsemann zum Mond, um sein verlorenes sechstes Beinchen zurückzuholen – vorbei an Sternenwiese, Milchstraße und dem Schloss der Nachtfee. Gelesen von Franziska Nelson.",
     "kapitel": [
-      [1, "Die Geschichte der Sumsemanns"],
-      [2, "In der Kinderstube"],
-      [3, "Der Flug nach der Sternenwiese"],
-      [4, "Die Sternenwiese"],
-      [5, "Die Schlittenfahrt auf der Milchstraße"],
-      [6, "Das Schloss der Nachtfee"],
-      [7, "Die Ankunft der Kinder im Schloss der Nachtfee"],
-      [8, "Der Ritt auf dem großen Bären"],
-      [9, "Die Weihnachtswiese"],
-      [10, "Das Osternest"],
-      [11, "Die Mondkanone"],
-      [12, "Der Kampf mit dem Mondmann"],
-      [13, "Das Beinchen"],
-      [14, "Wieder daheim"]
-    ]
+      [
+        1,
+        "Die Geschichte der Sumsemanns"
+      ],
+      [
+        2,
+        "In der Kinderstube"
+      ],
+      [
+        3,
+        "Der Flug nach der Sternenwiese"
+      ],
+      [
+        4,
+        "Die Sternenwiese"
+      ],
+      [
+        5,
+        "Die Schlittenfahrt auf der Milchstraße"
+      ],
+      [
+        6,
+        "Das Schloss der Nachtfee"
+      ],
+      [
+        7,
+        "Die Ankunft der Kinder im Schloss der Nachtfee"
+      ],
+      [
+        8,
+        "Der Ritt auf dem großen Bären"
+      ],
+      [
+        9,
+        "Die Weihnachtswiese"
+      ],
+      [
+        10,
+        "Das Osternest"
+      ],
+      [
+        11,
+        "Die Mondkanone"
+      ],
+      [
+        12,
+        "Der Kampf mit dem Mondmann"
+      ],
+      [
+        13,
+        "Das Beinchen"
+      ],
+      [
+        14,
+        "Wieder daheim"
+      ]
+    ],
+    "kategorie": "Kinder & Märchen"
   },
   "verwandlung_mw_0811_librivox": {
     "titel": "Die Verwandlung",
     "autor": "Franz Kafka",
     "beschreibung": "Der Handlungsreisende Gregor Samsa wacht eines Morgens als riesiges Ungeziefer auf. Kafkas berühmte Erzählung von 1915 über Entfremdung, Pflicht und eine Familie, die mit dem Unfassbaren leben muss.",
-    "kapitel": [[1, "Erster Teil"], [2, "Zweiter Teil"], [3, "Dritter Teil"]]
+    "kapitel": [
+      [
+        1,
+        "Erster Teil"
+      ],
+      [
+        2,
+        "Zweiter Teil"
+      ],
+      [
+        3,
+        "Dritter Teil"
+      ]
+    ],
+    "kategorie": "Romane & Erzählungen"
   },
   "kleider_machen_leute_librivox": {
     "titel": "Kleider machen Leute",
     "autor": "Gottfried Keller",
     "beschreibung": "Der arme Schneidergeselle Wenzel wird wegen seines feinen Mantels in Goldach für einen polnischen Grafen gehalten – und schafft es nicht, den Irrtum aufzuklären. Kellers Novelle von 1874, gelesen von Stefan Schmelz.",
-    "kapitel": [[1, "Erster Teil"], [2, "Zweiter Teil"], [3, "Dritter Teil"]]
+    "kapitel": [
+      [
+        1,
+        "Erster Teil"
+      ],
+      [
+        2,
+        "Zweiter Teil"
+      ],
+      [
+        3,
+        "Dritter Teil"
+      ]
+    ],
+    "kategorie": "Romane & Erzählungen"
   }
 }

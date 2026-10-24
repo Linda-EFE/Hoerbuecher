@@ -170,6 +170,47 @@
   .s-knopf.play svg { width: 30px; height: 30px; }
   .hinweis { text-align: center; color: var(--muted); font-size: 11px; margin-top: 2px; }
 
+
+  /* ---------- Suche & Filter ---------- */
+  .filter { margin-top: 18px; display: grid; gap: 12px; }
+  .suchfeld { position: relative; display: block; }
+  .suchfeld svg { position: absolute; left: 14px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  .suchfeld input {
+    width: 100%; background: var(--card); border: 1px solid var(--line); color: var(--text);
+    border-radius: 12px; padding: 12px 14px 12px 42px; font: inherit; font-size: 16px; outline: none;
+    -webkit-appearance: none; appearance: none;
+  }
+  .suchfeld input:focus { border-color: var(--accent); }
+  .suchfeld input::placeholder { color: var(--muted); }
+  .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 16px 2px; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: none; background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 14px; font-size: 14px; color: var(--muted); white-space: nowrap;
+  }
+  .chip.an { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+  .filter-zeile { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .segment { display: inline-flex; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
+  .segment button { background: none; border: 0; padding: 6px 11px; border-radius: 7px; font-size: 14px; color: var(--muted); }
+  .segment button.an { background: var(--card-hover); color: var(--text); font-weight: 600; }
+  select.sortierung {
+    margin-left: auto; background: var(--card); color: var(--text); border: 1px solid var(--line);
+    border-radius: 10px; padding: 8px 10px; font: inherit; font-size: 14px;
+  }
+  .anzahl { color: var(--muted); font-size: 13px; }
+  .marke {
+    display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .02em;
+    padding: 1px 7px; border-radius: 999px; vertical-align: 1px; margin-left: 8px;
+    border: 1px solid var(--line); color: var(--muted);
+  }
+  .marke.lokal { border-color: var(--accent); color: var(--accent); }
+  #mehr-laden { height: 40px; }
+  .meldung {
+    position: fixed; left: 16px; right: 16px; bottom: calc(190px + var(--safe-b)); z-index: 20;
+    max-width: 520px; margin: 0 auto; background: #5a2a22; color: #fff; border-radius: 12px;
+    padding: 12px 16px; font-size: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  }
+
   .leer { color: var(--muted); padding: 40px 0; text-align: center; }
   [hidden] { display: none !important; }
 
@@ -191,8 +232,31 @@
       <h1>Hörbücher</h1>
     </div>
     <p class="sub">Wähle ein Hörbuch aus.</p>
+    <div class="filter">
+      <label class="suchfeld">
+        <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="suche" placeholder="Titel oder Autor suchen …" autocomplete="off" aria-label="Suchen">
+      </label>
+      <div class="chips" id="kategorien" aria-label="Kategorien"></div>
+      <div class="filter-zeile">
+        <div class="segment" id="quelle" role="group" aria-label="Quelle">
+          <button data-q="alle" class="an">Alle</button>
+          <button data-q="lokal">Im Repository</button>
+          <button data-q="online">Online</button>
+        </div>
+        <select class="sortierung" id="sortierung" aria-label="Sortierung">
+          <option value="beliebt">Beliebteste</option>
+          <option value="titel">Titel A–Z</option>
+          <option value="autor">Autor A–Z</option>
+          <option value="kurz">Kürzeste zuerst</option>
+          <option value="lang">Längste zuerst</option>
+        </select>
+      </div>
+      <div class="anzahl" id="anzahl"></div>
+    </div>
   </header>
   <ul class="liste" id="liste"><li class="leer">Hörbücher werden geladen …</li></ul>
+  <div id="mehr-laden"></div>
 </main>
 
 <!-- Titelauswahl eines Hörbuchs -->
@@ -209,12 +273,13 @@
       <div class="buch-autor" id="d-autor" style="color:var(--muted)"></div>
       <h2 id="d-titel"></h2>
       <div style="color:var(--muted);font-size:14px" id="d-meta"></div>
+      <div style="color:var(--muted);font-size:13px;margin-top:4px" id="d-sprecher"></div>
     </div>
   </div>
   <p class="beschreibung zu" id="d-beschreibung"></p>
   <button class="mehr" id="d-mehr" hidden>Mehr anzeigen</button>
   <ol class="kapitel-liste" id="d-kapitel"></ol>
-  <p class="quelle">Gelesen von LibriVox-Freiwilligen · gemeinfrei · <a id="d-quelle" target="_blank" rel="noopener">Quelle</a></p>
+  <p class="quelle"><span id="d-herkunft"></span> · LibriVox · gemeinfrei · <a id="d-quelle" target="_blank" rel="noopener">Quelle</a></p>
 </main>
 
 <!-- Player -->
@@ -262,6 +327,7 @@
 </section>
 
 <audio id="audio" preload="metadata"></audio>
+<div class="meldung" id="meldung" hidden role="alert"></div>
 
 <script>
 (() => {
@@ -269,16 +335,18 @@
   const audio = $('audio');
   const SPEICHER = 'hoerbuecher-stand-v1';
   const TEMPI = [1, 1.25, 1.5, 1.75, 2, 0.75];
+  const SEITE = 40;            // so viele Hörbücher werden auf einmal angezeigt
 
-  let buecher = [];
-  let aktBuch = null;   // Hörbuch, das gerade spielt
-  let aktIndex = -1;    // Kapitel-Index, das gerade spielt
-  let ansicht = null;   // Hörbuch, das in der Titelauswahl angezeigt wird
-  let ziehen = false;
+  let buecher = [];            // alle Hörbücher (Repository + online)
+  let gefiltert = [];
+  let angezeigt = 0;
+  let aktBuch = null, aktIndex = -1, ansicht = null, ziehen = false;
+  let listeScroll = 0;
+  const filter = { text: '', kategorie: 'Alle', quelle: 'alle', sortierung: 'beliebt' };
 
   // ---------- gespeicherter Stand (pro Hörbuch: Kapitel + Position) ----------
-  const ladeStand = () => { try { return JSON.parse(localStorage.getItem(SPEICHER)) || {}; } catch { return {}; } };
-  let stand = ladeStand();
+  let stand = {};
+  try { stand = JSON.parse(localStorage.getItem(SPEICHER)) || {}; } catch {}
   const speichere = () => { try { localStorage.setItem(SPEICHER, JSON.stringify(stand)); } catch {} };
 
   const zeit = s => {
@@ -287,51 +355,144 @@
     return h ? `${h}:${String(m).padStart(2, '0')}:${sek}` : `${m}:${sek}`;
   };
   const dauerText = s => {
-    const m = Math.round(s / 60);
+    if (!s) return '';
+    const m = Math.max(1, Math.round(s / 60));
     return m < 60 ? `${m} Min.` : `${Math.floor(m / 60)} Std. ${m % 60} Min.`;
   };
   const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const normal = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
+
+  // ---------- Ersatz-Cover, falls kein Bild vorhanden ist ----------
+  const FARBEN = [['#7a2e2e', '#f3d9a4'], ['#24485f', '#f1e4c8'], ['#3d5a3a', '#f4e7c5'],
+                  ['#5b3a6b', '#f2dcc2'], ['#8a5a1f', '#fbefd6'], ['#2f3b4c', '#e8c37e']];
+  const svgEsc = t => String(t).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  function ersatzCover(titel, autor) {
+    const [bg, fg] = FARBEN[[...titel].reduce((s, c) => s + c.charCodeAt(0), 0) % FARBEN.length];
+    const zeilen = []; let z = '';
+    for (const w of titel.split(/\s+/)) {
+      if (z && (z + ' ' + w).length > 14) { zeilen.push(z); z = w; } else z = (z + ' ' + w).trim();
+    }
+    if (z) zeilen.push(z);
+    const zl = zeilen.slice(0, 4);
+    const gr = Math.max(...zl.map(x => x.length)) <= 10 ? 52 : 42;
+    const y0 = 300 - (zl.length - 1) * gr * 0.6;
+    const yEnde = y0 + zl.length * gr * 1.2;
+    const tsp = zl.map((x, i) => `<tspan x="300" y="${y0 + i * gr * 1.2}">${svgEsc(x)}</tspan>`).join('');
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect width="600" height="600" fill="${bg}"/>` +
+      `<rect x="30" y="30" width="540" height="540" fill="none" stroke="${fg}" stroke-width="3" opacity=".7"/>` +
+      `<path d="M255 150a45 45 0 0 1 90 0" fill="none" stroke="${fg}" stroke-width="6" stroke-linecap="round"/>` +
+      `<rect x="243" y="146" width="18" height="34" rx="8" fill="${fg}"/><rect x="339" y="146" width="18" height="34" rx="8" fill="${fg}"/>` +
+      `<text font-family="Georgia,serif" font-size="${gr}" font-weight="bold" fill="${fg}" text-anchor="middle">${tsp}</text>` +
+      `<line x1="230" y1="${yEnde - 10}" x2="370" y2="${yEnde - 10}" stroke="${fg}" stroke-width="2" opacity=".6"/>` +
+      `<text x="300" y="${yEnde + 34}" font-family="Georgia,serif" font-size="28" font-style="italic" fill="${fg}" text-anchor="middle" opacity=".85">${svgEsc(autor.slice(0, 34))}</text>` +
+      `<text x="300" y="530" font-family="Arial,sans-serif" font-size="16" letter-spacing="4" fill="${fg}" text-anchor="middle" opacity=".6">HÖRBUCH</text></svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+  const coverVon = b => b.cover || (b._ersatz ||= ersatzCover(b.titel, b.autor));
+  // Bild lädt nicht -> Ersatz-Cover
+  document.addEventListener('error', e => {
+    const img = e.target;
+    if (img.tagName !== 'IMG' || !img.dataset.id) return;
+    const b = buecher.find(x => x.id === img.dataset.id);
+    if (b && !img.src.startsWith('data:')) { b.cover = null; img.src = coverVon(b); }
+  }, true);
 
   // ---------- Übersicht ----------
-  function zeigeListe() {
-    const ul = $('liste');
-    if (!buecher.length) { ul.innerHTML = '<li class="leer">Noch keine Hörbücher vorhanden.</li>'; return; }
-    ul.innerHTML = buecher.map(b => {
-      const gesamt = b.kapitel.reduce((s, k) => s + (k.dauer || 0), 0);
-      const st = stand[b.id];
-      const label = st ? 'Weiterhören' : 'Anhören';
-      return `<li class="buch">
-        <div class="cover"><img src="${esc(b.cover)}" alt="Cover: ${esc(b.titel)}" loading="lazy"></div>
-        <div class="info">
-          <div class="autor">${esc(b.autor)}</div>
-          <div class="titel">${esc(b.titel)}</div>
-          <div class="meta-zeile">${b.kapitel.length} Titel · ${dauerText(gesamt)}</div>
-          <button class="knopf" data-id="${esc(b.id)}">
-            <svg viewBox="0 0 24 24"><path d="M7 4.5v15L19.5 12z" fill="currentColor"/></svg>${label}
-          </button>
-        </div>
-      </li>`;
-    }).join('');
+  function zeigeKategorien() {
+    const zaehler = {};
+    buecher.forEach(b => { zaehler[b.kategorie] = (zaehler[b.kategorie] || 0) + 1; });
+    const reihenfolge = ['Kinder & Märchen', 'Romane & Erzählungen', 'Abenteuer', 'Krimi', 'Gedichte', 'Drama', 'Sachbuch'];
+    const namen = ['Alle', ...reihenfolge.filter(k => zaehler[k]), ...Object.keys(zaehler).filter(k => !reihenfolge.includes(k))];
+    $('kategorien').innerHTML = namen.map(k =>
+      `<button class="chip${k === filter.kategorie ? ' an' : ''}" data-k="${esc(k)}">${esc(k)}${k !== 'Alle' ? ` <span style="opacity:.7">${zaehler[k]}</span>` : ''}</button>`).join('');
   }
+  $('kategorien').addEventListener('click', e => {
+    const c = e.target.closest('.chip'); if (!c) return;
+    filter.kategorie = c.dataset.k;
+    $('kategorien').querySelectorAll('.chip').forEach(x => x.classList.toggle('an', x === c));
+    filtere();
+  });
+  $('quelle').addEventListener('click', e => {
+    const k = e.target.closest('button'); if (!k) return;
+    filter.quelle = k.dataset.q;
+    $('quelle').querySelectorAll('button').forEach(x => x.classList.toggle('an', x === k));
+    filtere();
+  });
+  $('sortierung').addEventListener('change', e => { filter.sortierung = e.target.value; filtere(); });
+  let suchTimer;
+  $('suche').addEventListener('input', e => {
+    clearTimeout(suchTimer);
+    suchTimer = setTimeout(() => { filter.text = e.target.value; filtere(); }, 150);
+  });
+
+  function filtere() {
+    const worte = normal(filter.text).split(/\s+/).filter(Boolean);
+    gefiltert = buecher.filter(b =>
+      (filter.kategorie === 'Alle' || b.kategorie === filter.kategorie) &&
+      (filter.quelle === 'alle' || (filter.quelle === 'lokal') === b.lokal) &&
+      worte.every(w => b._suche.includes(w)));
+    const cmp = {
+      beliebt: (a, b) => (b.lokal - a.lokal) || (b.beliebt - a.beliebt),
+      titel: (a, b) => a.titel.localeCompare(b.titel, 'de'),
+      autor: (a, b) => a.autor.localeCompare(b.autor, 'de') || a.titel.localeCompare(b.titel, 'de'),
+      kurz: (a, b) => a.gesamt - b.gesamt,
+      lang: (a, b) => b.gesamt - a.gesamt,
+    }[filter.sortierung];
+    gefiltert.sort(cmp);
+    // Angefangene Hörbücher immer oben
+    if (filter.sortierung === 'beliebt' && !worte.length) {
+      gefiltert.sort((a, b) => (!!stand[b.id]) - (!!stand[a.id]));
+    }
+    $('anzahl').textContent = gefiltert.length === 1 ? '1 Hörbuch' : `${gefiltert.length} Hörbücher`;
+    angezeigt = 0;
+    $('liste').innerHTML = gefiltert.length ? '' : '<li class="leer">Keine passenden Hörbücher gefunden.</li>';
+    mehrAnzeigen();
+  }
+
+  function karte(b) {
+    const label = stand[b.id] ? 'Weiterhören' : 'Anhören';
+    return `<li class="buch">
+      <div class="cover"><img src="${esc(coverVon(b))}" data-id="${esc(b.id)}" alt="Cover: ${esc(b.titel)}" loading="lazy"></div>
+      <div class="info">
+        <div class="autor">${esc(b.autor)}</div>
+        <div class="titel">${esc(b.titel)}</div>
+        <div class="meta-zeile">${b.kapitel.length} Titel${b.gesamt ? ' · ' + dauerText(b.gesamt) : ''}<span class="marke${b.lokal ? ' lokal' : ''}">${b.lokal ? 'Im Repository' : 'Online'}</span></div>
+        <button class="knopf" data-id="${esc(b.id)}">
+          <svg viewBox="0 0 24 24"><path d="M7 4.5v15L19.5 12z" fill="currentColor"/></svg>${label}
+        </button>
+      </div>
+    </li>`;
+  }
+  function mehrAnzeigen() {
+    if (angezeigt >= gefiltert.length) return;
+    const neu = gefiltert.slice(angezeigt, angezeigt + SEITE);
+    $('liste').insertAdjacentHTML('beforeend', neu.map(karte).join(''));
+    angezeigt += neu.length;
+  }
+  new IntersectionObserver(es => {
+    if (es[0].isIntersecting && !$('uebersicht').hidden) mehrAnzeigen();
+  }, { rootMargin: '600px' }).observe($('mehr-laden'));
+
   $('liste').addEventListener('click', e => {
     const k = e.target.closest('.knopf');
-    if (k) location.hash = '#/' + encodeURIComponent(k.dataset.id);
+    if (k) { listeScroll = window.scrollY; location.hash = '#/' + encodeURIComponent(k.dataset.id); }
   });
 
   // ---------- Titelauswahl ----------
   function zeigeDetail(b) {
     ansicht = b;
-    const gesamt = b.kapitel.reduce((s, k) => s + (k.dauer || 0), 0);
-    $('d-cover').src = b.cover; $('d-cover').alt = 'Cover: ' + b.titel;
+    $('d-cover').src = coverVon(b); $('d-cover').dataset.id = b.id; $('d-cover').alt = 'Cover: ' + b.titel;
     $('d-autor').textContent = b.autor;
     $('d-titel').textContent = b.titel;
-    $('d-meta').textContent = `${b.kapitel.length} Titel · ${dauerText(gesamt)}`;
+    $('d-meta').textContent = `${b.kapitel.length} Titel${b.gesamt ? ' · ' + dauerText(b.gesamt) : ''}`;
+    $('d-sprecher').textContent = b.sprecher ? 'Gelesen von ' + b.sprecher : '';
     const besch = $('d-beschreibung');
     besch.textContent = b.beschreibung || '';
     besch.classList.add('zu');
     $('d-mehr').hidden = !b.beschreibung || b.beschreibung.length < 180;
     $('d-mehr').textContent = 'Mehr anzeigen';
     $('d-quelle').href = b.quelle;
+    $('d-herkunft').textContent = b.lokal ? 'Im Repository gespeichert' : 'Gestreamt vom Internet Archive';
     zeigeKapitel();
   }
   function zeigeKapitel() {
@@ -362,7 +523,9 @@
   $('zurueck').addEventListener('click', () => {
     if (history.length > 1 && location.hash.startsWith('#/')) history.back(); else location.hash = '';
   });
-  $('p-text').addEventListener('click', () => { if (aktBuch) location.hash = '#/' + encodeURIComponent(aktBuch.id); });
+  $('p-text').addEventListener('click', () => {
+    if (aktBuch) { if (!ansicht) listeScroll = window.scrollY; location.hash = '#/' + encodeURIComponent(aktBuch.id); }
+  });
 
   // ---------- Navigation (Übersicht <-> Titelauswahl) ----------
   function route() {
@@ -370,28 +533,47 @@
     const b = buecher.find(x => x.id === id);
     $('uebersicht').hidden = !!b;
     $('detail').hidden = !b;
-    if (b) zeigeDetail(b); else { ansicht = null; zeigeListe(); }
-    window.scrollTo(0, 0);
+    if (b) { zeigeDetail(b); window.scrollTo(0, 0); }
+    else {
+      ansicht = null;
+      // Knöpfe "Anhören/Weiterhören" aktualisieren, Liste und Scroll-Position behalten
+      const schon = angezeigt;
+      filtere();
+      while (angezeigt < schon && angezeigt < gefiltert.length) mehrAnzeigen();
+      window.scrollTo(0, listeScroll);
+    }
   }
   window.addEventListener('hashchange', route);
 
   // ---------- Abspielen ----------
+  let meldungTimer;
+  function meldung(text) {
+    const m = $('meldung'); m.textContent = text; m.hidden = false;
+    clearTimeout(meldungTimer); meldungTimer = setTimeout(() => { m.hidden = true; }, 6000);
+  }
+  audio.addEventListener('error', () => {
+    if (!aktBuch) return;
+    meldung(aktBuch.lokal
+      ? 'Dieser Titel konnte nicht geladen werden.'
+      : 'Dieser Titel konnte nicht vom Internet Archive geladen werden. Bitte Internetverbindung prüfen oder später erneut versuchen.');
+  });
+
   function spiele(b, i, pos = 0) {
     if (i < 0 || i >= b.kapitel.length) return;
     aktBuch = b; aktIndex = i;
     const k = b.kapitel[i];
+    $('meldung').hidden = true;
     audio.src = k.datei;
     audio.playbackRate = tempo;
-    const start = () => { if (pos > 0 && pos < (audio.duration || Infinity) - 2) audio.currentTime = pos; };
+    const start = () => { if (pos > 0 && pos < (audio.duration || Infinity) - 2) audio.currentTime = pos; audio.playbackRate = tempo; };
     audio.addEventListener('loadedmetadata', start, { once: true });
     audio.play().catch(() => {});
     stand[b.id] = { kapitel: i, pos };
     speichere();
     $('player').classList.add('sichtbar');
-    $('p-cover').src = b.cover;
+    $('p-cover').src = coverVon(b);
     $('p-titel').textContent = k.titel;
     $('p-buch').textContent = `${b.titel} · Titel ${i + 1} von ${b.kapitel.length}`;
-    $('b-vorher').disabled = false;
     $('b-naechster').disabled = i >= b.kapitel.length - 1;
     zeigeKapitel();
     mediaSession(b, k);
@@ -411,7 +593,7 @@
 
   $('b-play').addEventListener('click', () => {
     if (!aktBuch) {
-      const b = ansicht || buecher[0]; if (!b) return;
+      const b = ansicht || gefiltert[0]; if (!b) return;
       const st = stand[b.id];
       return spiele(b, st ? st.kapitel : 0, st ? st.pos : 0);
     }
@@ -424,11 +606,7 @@
   document.querySelectorAll('.spul').forEach(btn => {
     const sek = +btn.dataset.sek;
     let warte = null, takt = null, gehalten = false;
-    const stop = () => {
-      clearTimeout(warte); clearInterval(takt);
-      btn.classList.remove('halten');
-      warte = takt = null;
-    };
+    const stop = () => { clearTimeout(warte); clearInterval(takt); btn.classList.remove('halten'); warte = takt = null; };
     btn.addEventListener('pointerdown', e => {
       e.preventDefault();
       gehalten = false;
@@ -507,10 +685,10 @@
   // Sperrbildschirm / Kopfhörer-Tasten (iPhone & Android)
   function mediaSession(b, k) {
     if (!('mediaSession' in navigator)) return;
-    const absolut = new URL(b.cover, location.href).href;
+    const bild = coverVon(b);
     navigator.mediaSession.metadata = new MediaMetadata({
       title: k.titel, artist: b.autor, album: b.titel,
-      artwork: [{ src: absolut, sizes: '512x512' }]
+      artwork: bild.startsWith('data:') ? [] : [{ src: new URL(bild, location.href).href, sizes: '512x512' }]
     });
     const ms = navigator.mediaSession;
     const setze = (a, f) => { try { ms.setActionHandler(a, f); } catch {} };
@@ -525,17 +703,41 @@
 
   // Tastatur (am Computer): Leertaste, Pfeile
   document.addEventListener('keydown', e => {
-    if (!aktBuch || e.target.matches('input, button')) return;
+    if (!aktBuch || e.target.matches('input, button, select')) return;
     if (e.key === ' ') { e.preventDefault(); audio.paused ? audio.play() : audio.pause(); }
     if (e.key === 'ArrowLeft') spulen(e.shiftKey ? -60 : -15);
     if (e.key === 'ArrowRight') spulen(e.shiftKey ? 60 : 15);
   });
 
-  // ---------- Start ----------
-  fetch('hoerbuecher.json', { cache: 'no-cache' })
-    .then(r => r.json())
-    .then(d => { buecher = d.hoerbuecher || []; route(); })
-    .catch(() => { $('liste').innerHTML = '<li class="leer">Die Hörbuchliste konnte nicht geladen werden.</li>'; });
+  // ---------- Daten laden ----------
+  function vorbereiten(b) {
+    b.gesamt = b.kapitel.reduce((s, k) => s + (k.dauer || 0), 0);
+    b._suche = normal([b.titel, b.autor, b.sprecher, ...b.kapitel.map(k => k.titel)].join(' '));
+    return b;
+  }
+  const lokal = fetch('hoerbuecher.json', { cache: 'no-cache' }).then(r => r.json())
+    .then(d => (d.hoerbuecher || []).map(b => vorbereiten({ ...b, lokal: true, beliebt: Infinity, kategorie: b.kategorie || 'Romane & Erzählungen' })))
+    .catch(() => []);
+  const online = fetch('katalog-online.json', { cache: 'no-cache' }).then(r => r.json())
+    .then(d => (d.hoerbuecher || []).map(b => {
+      const basis = d.basis + encodeURIComponent(b.id) + '/';
+      const pfad = n => basis + n.split('/').map(encodeURIComponent).join('/');
+      return vorbereiten({
+        id: b.id, titel: b.titel, autor: b.autor, sprecher: b.sprecher, beschreibung: b.beschreibung,
+        kategorie: b.kategorie, beliebt: b.beliebt, lokal: false,
+        quelle: 'https://archive.org/details/' + b.id,
+        cover: b.cover ? pfad(b.cover) : null,
+        kapitel: b.kapitel.map(k => ({ titel: k.t, datei: pfad(k.d), dauer: k.s })),
+      });
+    }))
+    .catch(() => []);
+  Promise.all([lokal, online]).then(([a, b]) => {
+    const ids = new Set(a.map(x => x.id));
+    buecher = [...a, ...b.filter(x => !ids.has(x.id))];
+    if (!buecher.length) { $('liste').innerHTML = '<li class="leer">Die Hörbuchliste konnte nicht geladen werden.</li>'; return; }
+    zeigeKategorien();
+    route();
+  });
 })();
 </script>
 </body>
