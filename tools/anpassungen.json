@@ -9,7 +9,7 @@
         "Max und Moritz – alle sieben Streiche"
       ]
     ],
-    "kategorie": "Kinder & Märchen"
+    "kategorie": "Bildergeschichten & Reime"
   },
   "struwwelpeter_de2_librivox": {
     "titel": "Der Struwwelpeter",
@@ -21,7 +21,7 @@
         "Der Struwwelpeter – alle Geschichten"
       ]
     ],
-    "kategorie": "Kinder & Märchen"
+    "kategorie": "Bildergeschichten & Reime"
   },
   "grimm_maerchen_1_librivox": {
     "titel": "Grimms Märchen",
@@ -181,7 +181,7 @@
         "Von dem Mäuschen, Vögelchen und der Bratwurst"
       ]
     ],
-    "kategorie": "Kinder & Märchen"
+    "kategorie": "Märchen"
   },
   "peterchens_mondfahrt_librivox": {
     "titel": "Peterchens Mondfahrt",
@@ -245,46 +245,6 @@
         "Wieder daheim"
       ]
     ],
-    "kategorie": "Kinder & Märchen"
-  },
-  "verwandlung_mw_0811_librivox": {
-    "titel": "Die Verwandlung",
-    "autor": "Franz Kafka",
-    "beschreibung": "Der Handlungsreisende Gregor Samsa wacht eines Morgens als riesiges Ungeziefer auf. Kafkas berühmte Erzählung von 1915 über Entfremdung, Pflicht und eine Familie, die mit dem Unfassbaren leben muss.",
-    "kapitel": [
-      [
-        1,
-        "Erster Teil"
-      ],
-      [
-        2,
-        "Zweiter Teil"
-      ],
-      [
-        3,
-        "Dritter Teil"
-      ]
-    ],
-    "kategorie": "Romane & Erzählungen"
-  },
-  "kleider_machen_leute_librivox": {
-    "titel": "Kleider machen Leute",
-    "autor": "Gottfried Keller",
-    "beschreibung": "Der arme Schneidergeselle Wenzel wird wegen seines feinen Mantels in Goldach für einen polnischen Grafen gehalten – und schafft es nicht, den Irrtum aufzuklären. Kellers Novelle von 1874, gelesen von Stefan Schmelz.",
-    "kapitel": [
-      [
-        1,
-        "Erster Teil"
-      ],
-      [
-        2,
-        "Zweiter Teil"
-      ],
-      [
-        3,
-        "Dritter Teil"
-      ]
-    ],
-    "kategorie": "Romane & Erzählungen"
+    "kategorie": "Kindergeschichten"
   }
 }

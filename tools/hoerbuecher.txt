@@ -4,5 +4,3 @@ max_und_moritz_librivox
 struwwelpeter_de2_librivox
 grimm_maerchen_1_librivox
 peterchens_mondfahrt_librivox
-verwandlung_mw_0811_librivox
-kleider_machen_leute_librivox

@@ -231,11 +231,11 @@
       <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26a16 16 0 0 1 32 0" fill="none" stroke="#e8a24a" stroke-width="4" stroke-linecap="round"/><rect x="5" y="25" width="9" height="15" rx="4" fill="#e8a24a"/><rect x="34" y="25" width="9" height="15" rx="4" fill="#e8a24a"/></svg>
       <h1>Hörbücher</h1>
     </div>
-    <p class="sub">Wähle ein Hörbuch aus.</p>
+    <p class="sub">Hörbücher für Kinder bis 10 Jahre</p>
     <div class="filter">
       <label class="suchfeld">
         <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <input type="search" id="suche" placeholder="Titel oder Autor suchen …" autocomplete="off" aria-label="Suchen">
+        <input type="search" id="suche" placeholder="Märchen, Titel oder Autor suchen …" autocomplete="off" aria-label="Suchen">
       </label>
       <div class="chips" id="kategorien" aria-label="Kategorien"></div>
       <div class="filter-zeile">
@@ -401,7 +401,7 @@
   function zeigeKategorien() {
     const zaehler = {};
     buecher.forEach(b => { zaehler[b.kategorie] = (zaehler[b.kategorie] || 0) + 1; });
-    const reihenfolge = ['Kinder & Märchen', 'Romane & Erzählungen', 'Abenteuer', 'Krimi', 'Gedichte', 'Drama', 'Sachbuch'];
+    const reihenfolge = ['Märchen', 'Kindergeschichten', 'Bildergeschichten & Reime', 'Weihnachten'];
     const namen = ['Alle', ...reihenfolge.filter(k => zaehler[k]), ...Object.keys(zaehler).filter(k => !reihenfolge.includes(k))];
     $('kategorien').innerHTML = namen.map(k =>
       `<button class="chip${k === filter.kategorie ? ' an' : ''}" data-k="${esc(k)}">${esc(k)}${k !== 'Alle' ? ` <span style="opacity:.7">${zaehler[k]}</span>` : ''}</button>`).join('');
@@ -716,7 +716,7 @@
     return b;
   }
   const lokal = fetch('hoerbuecher.json', { cache: 'no-cache' }).then(r => r.json())
-    .then(d => (d.hoerbuecher || []).map(b => vorbereiten({ ...b, lokal: true, beliebt: Infinity, kategorie: b.kategorie || 'Romane & Erzählungen' })))
+    .then(d => (d.hoerbuecher || []).map(b => vorbereiten({ ...b, lokal: true, beliebt: Infinity, kategorie: b.kategorie || 'Kindergeschichten' })))
     .catch(() => []);
   const online = fetch('katalog-online.json', { cache: 'no-cache' }).then(r => r.json())
     .then(d => (d.hoerbuecher || []).map(b => {

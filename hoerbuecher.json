@@ -5,7 +5,7 @@
       "titel": "Max und Moritz",
       "autor": "Wilhelm Busch",
       "beschreibung": "Die berühmte Bubengeschichte in sieben Streichen: Max und Moritz ärgern Witwe Bolte, Schneider Böck, Lehrer Lämpel und das ganze Dorf, bis ihr letzter Streich böse endet. Gelesen von Mikki Starzmann-Kassi.",
-      "kategorie": "Kinder & Märchen",
+      "kategorie": "Bildergeschichten & Reime",
       "quelle": "https://archive.org/details/max_und_moritz_librivox",
       "cover": "audio/max_und_moritz_librivox/cover.jpg",
       "kapitel": [
@@ -21,7 +21,7 @@
       "titel": "Der Struwwelpeter",
       "autor": "Heinrich Hoffmann",
       "beschreibung": "Die lustigen und drolligen Bildergeschichten von 1845: vom Struwwelpeter, dem bösen Friederich, Paulinchen mit dem Feuerzeug, dem Suppen-Kaspar und dem Zappel-Philipp. Gelesen von Roman Büttner.",
-      "kategorie": "Kinder & Märchen",
+      "kategorie": "Bildergeschichten & Reime",
       "quelle": "https://archive.org/details/struwwelpeter_de2_librivox",
       "cover": "audio/struwwelpeter_de2_librivox/cover.jpg",
       "kapitel": [
@@ -37,7 +37,7 @@
       "titel": "Grimms Märchen",
       "autor": "Brüder Grimm",
       "beschreibung": "38 Kinder- und Hausmärchen, die Jacob und Wilhelm Grimm Anfang des 19. Jahrhunderts gesammelt haben – von Hänsel und Gretel, Frau Holle und Rotkäppchen bis zu Rumpelstilzchen und König Drosselbart. Gelesen von verschiedenen LibriVox-Sprechern.",
-      "kategorie": "Kinder & Märchen",
+      "kategorie": "Märchen",
       "quelle": "https://archive.org/details/grimm_maerchen_1_librivox",
       "cover": "audio/grimm_maerchen_1_librivox/cover.jpg",
       "kapitel": [
@@ -238,7 +238,7 @@
       "titel": "Peterchens Mondfahrt",
       "autor": "Gerdt von Bassewitz",
       "beschreibung": "Peterchen und Anneliese fliegen mit dem Maikäfer Herrn Sumsemann zum Mond, um sein verlorenes sechstes Beinchen zurückzuholen – vorbei an Sternenwiese, Milchstraße und dem Schloss der Nachtfee. Gelesen von Franziska Nelson.",
-      "kategorie": "Kinder & Märchen",
+      "kategorie": "Kindergeschichten",
       "quelle": "https://archive.org/details/peterchens_mondfahrt_librivox",
       "cover": "audio/peterchens_mondfahrt_librivox/cover.jpg",
       "kapitel": [
@@ -311,58 +311,6 @@
           "titel": "Wieder daheim",
           "datei": "audio/peterchens_mondfahrt_librivox/14.mp3",
           "dauer": 411
-        }
-      ]
-    },
-    {
-      "id": "verwandlung_mw_0811_librivox",
-      "titel": "Die Verwandlung",
-      "autor": "Franz Kafka",
-      "beschreibung": "Der Handlungsreisende Gregor Samsa wacht eines Morgens als riesiges Ungeziefer auf. Kafkas berühmte Erzählung von 1915 über Entfremdung, Pflicht und eine Familie, die mit dem Unfassbaren leben muss.",
-      "kategorie": "Romane & Erzählungen",
-      "quelle": "https://archive.org/details/verwandlung_mw_0811_librivox",
-      "cover": "audio/verwandlung_mw_0811_librivox/cover.jpg",
-      "kapitel": [
-        {
-          "titel": "Erster Teil",
-          "datei": "audio/verwandlung_mw_0811_librivox/01.mp3",
-          "dauer": 2465
-        },
-        {
-          "titel": "Zweiter Teil",
-          "datei": "audio/verwandlung_mw_0811_librivox/02.mp3",
-          "dauer": 2663
-        },
-        {
-          "titel": "Dritter Teil",
-          "datei": "audio/verwandlung_mw_0811_librivox/03.mp3",
-          "dauer": 2554
-        }
-      ]
-    },
-    {
-      "id": "kleider_machen_leute_librivox",
-      "titel": "Kleider machen Leute",
-      "autor": "Gottfried Keller",
-      "beschreibung": "Der arme Schneidergeselle Wenzel wird wegen seines feinen Mantels in Goldach für einen polnischen Grafen gehalten – und schafft es nicht, den Irrtum aufzuklären. Kellers Novelle von 1874, gelesen von Stefan Schmelz.",
-      "kategorie": "Romane & Erzählungen",
-      "quelle": "https://archive.org/details/kleider_machen_leute_librivox",
-      "cover": "audio/kleider_machen_leute_librivox/cover.jpg",
-      "kapitel": [
-        {
-          "titel": "Erster Teil",
-          "datei": "audio/kleider_machen_leute_librivox/01.mp3",
-          "dauer": 2087
-        },
-        {
-          "titel": "Zweiter Teil",
-          "datei": "audio/kleider_machen_leute_librivox/02.mp3",
-          "dauer": 1584
-        },
-        {
-          "titel": "Dritter Teil",
-          "datei": "audio/kleider_machen_leute_librivox/03.mp3",
-          "dauer": 2041
         }
       ]
     }

@@ -1,13 +1,16 @@
 # Hörbücher
 
-Private Web-App zum Anhören gemeinfreier Hörbücher – optimiert fürs iPhone.
+Private Web-App zum Anhören gemeinfreier **Hörbücher für Kinder bis 10 Jahre** – optimiert fürs iPhone.
 
 **Seite:** https://linda-efe.github.io/Hoerbuecher/
 
-- **Gespeichert:** 6 Hörbücher liegen als MP3 direkt in diesem Repository (`audio/`).
-- **Online:** alle übrigen deutschsprachigen LibriVox-Hörbücher (über 800) sind nur verlinkt
-  und werden direkt vom Internet Archive gestreamt (`katalog-online.json`). Der Katalog wird
-  jeden Montag automatisch aktualisiert, neue LibriVox-Titel erscheinen also von selbst.
+- **Gespeichert:** 4 Hörbücher liegen als MP3 direkt in diesem Repository (`audio/`).
+- **Online:** weitere kindgerechte deutsche LibriVox-Hörbücher sind nur verlinkt und werden
+  direkt vom Internet Archive gestreamt (`katalog-online.json`).
+- **Nur kindgerechte Titel:** Welche Online-Hörbücher erscheinen, steht in `tools/kinder.txt`
+  (von Hand geprüft, für Kinder bis 10 Jahre). Neue Titel kommen nur dazu, wenn sie dort
+  eingetragen werden – eine Zeile `bezeichner | Kategorie` genügt (Kategorien: Märchen,
+  Kindergeschichten, Bildergeschichten & Reime, Weihnachten).
 
 ## Funktionen
 - Übersicht aller Hörbücher mit Cover und Knopf
@@ -28,5 +31,5 @@ Jedes Online-Hörbuch lässt sich auch fest speichern (dann unabhängig vom Inte
 
 ## Rechtliches
 Alle Aufnahmen stammen von [LibriVox](https://librivox.org) und sind gemeinfrei (Public Domain).
-Die 6 gespeicherten Titel sind auch in Deutschland gemeinfrei, weil die Autoren seit über 70 Jahren verstorben sind.
+Die 4 gespeicherten Titel sind auch in Deutschland gemeinfrei, weil die Autoren seit über 70 Jahren verstorben sind.
 Die Online-Titel werden nicht kopiert, sondern nur von ihrer legalen Quelle (archive.org) abgespielt.

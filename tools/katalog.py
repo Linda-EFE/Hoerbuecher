@@ -8,6 +8,17 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOKAL = os.path.join(ROOT, "tools", "hoerbuecher.txt")
 AUSGABE = os.path.join(ROOT, "katalog-online.json")
+KINDER = os.path.join(ROOT, "tools", "kinder.txt")
+
+def lade_kinderliste():
+    """Nur Hörbücher aus tools/kinder.txt (geeignet für Kinder bis 10 Jahre) kommen in den Katalog."""
+    liste = {}
+    for z in open(KINDER, encoding="utf-8"):
+        z = z.split("#", 1)[0].strip()
+        if "|" in z:
+            ident, kat = (x.strip() for x in z.split("|", 1))
+            liste[ident] = kat
+    return liste
 
 def hole_json(url, versuche=4):
     for v in range(versuche):
@@ -173,13 +184,18 @@ def buch(doc):
 def main():
     lokal = {z.strip() for z in open(LOKAL, encoding="utf-8")
              if z.strip() and not z.strip().startswith("#")}
-    treffer = [d for d in suche() if d["identifier"] not in lokal]
+    kinder = lade_kinderliste()
+    alle = suche()
+    print("Deutsche LibriVox-Titel insgesamt:", len(alle), flush=True)
+    treffer = [d for d in alle if d["identifier"] in kinder and d["identifier"] not in lokal]
     print("Gefunden:", len(treffer), flush=True)
     with ThreadPoolExecutor(8) as ex:
         buecher = [b for b in ex.map(buch, treffer) if b]
+    for b in buecher:
+        b["kategorie"] = kinder[b["id"]]
     buecher.sort(key=lambda b: -b["beliebt"])
     daten = {
-        "hinweis": "Nur Links. Die Audiodateien werden direkt vom Internet Archive (archive.org) gestreamt.",
+        "hinweis": "Nur Hörbücher für Kinder bis 10 Jahre (Liste: tools/kinder.txt). Nur Links. Die Audiodateien werden direkt vom Internet Archive (archive.org) gestreamt.",
         "basis": "https://archive.org/download/",
         "stand": time.strftime("%Y-%m-%d"),
         "hoerbuecher": buecher,
