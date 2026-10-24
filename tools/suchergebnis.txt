@@ -1,0 +1,302 @@
+### Abfrage: collection:librivoxaudio AND language:(German OR deu OR ger)
+grimm_maerchen_1_librivox | Märchen | Gebrueder Grimm | 4:55:03 | 909862605 | 1411366
+alices_abenteuer_0911 | Alice's Abenteuer im Wunderland | Lewis Carroll | 2:50:58 | 533279333 | 1199535
+grimm_maerchen2_librivox | Märchen 2 | Jacob und Wilhelm Grimm | 8:26:19 | 1533786952 | 1092937
+kleinzaches_1309_librivox | Klein Zaches, genannt Zinnober | E. T. A. Hoffmann |  | 905370581 | 892476
+tausend_und_eine_nacht_1_1504_librivox | Tausend und eine Nacht, Band 1 | Unknown | 22:18:39 | 4628766971 | 871587
+winnetou1_librivox | Winnetou I | Karl May | 16:43:24 | 2998630237 | 788436
+maerchen_1309_librivox | Märchen | Oscar Wilde | 05:46:53 | 1151718686 | 748607
+kafka_galerie_librivox | Auf der Galerie | Franz Kafka | 3:01 | 10898891 | 711483
+bildergeschichten_librivox | Bildergeschichten | Wilhelm Busch | 3:53:10 | 704079679 | 700208
+ueber_die_weiber_librivox | Über die Weiber | Arthur Schopenhauer | 11:07 | 34719382 | 683511
+samtlicheschriften_1911-1921_teil1_1309_librivox | Sämtliche Schriften 1911-1921, Teil 1 | Carl von Ossietzky | 07:05:33 | 1468114320 | 642308
+leiden_werther_librivox | Die Leiden des jungen Werther | Johann Wolfgang von Goethe | 4:56:56 | 916433701 | 627797
+tomsawyer_crow_librivox | Die Abenteuer Tom Sawyers | Mark Twain | 7:20:52 | 1097868965 | 605982
+sammlung_gedichte_001_librivox | Sammlung deutscher Gedichte 001 |  | 52:15 | 162830664 | 605744
+dasgrunegesicht_1309_librivox | Das Grüne Gesicht | Gustav Meyrink | 08:41:53 | 1780758885 | 520416
+20000_meilen_1001_librivox | Zwanzigtausend Meilen unter'm Meer | Jules Verne |  | 2791832746 | 506455
+tolle_mensch_librivox | Der tolle Mensch | Friedrich Nietzsche | 4:48 | 14354186 | 492311
+max_und_moritz_librivox | Max und Moritz | Wilhelm Busch | 20:24 | 58679513 | 475821
+schimmelreiter_storm_librivox | Der Schimmelreiter | Theodor Storm | 4:17:23 | 784361000 | 466193
+reise_um_die_erde_in_80_tagen_1510_librivox | Reise um die Erde in 80 Tagen | Jules Verne | 08:28:34 | 1735624556 | 463923
+manifestkommunistischen_librivox | Manifest der Kommunistischen Partei, von Karl Marx und Friedrich Engels | Karl Marx and Friedrich Engels | 2:22.09 | 450007912 | 443819
+peterchens_mondfahrt_librivox | Peterchens Mondfahrt | Gerdt von Bassewitz | 2:46:48 | 493901748 | 438770
+haewelmann_librivox | Der kleine Häwelmann | Theodor Storm | 8:18 | 26397675 | 420342
+kafka_laerm_librivox | Großer Lärm | Franz Kafka | 1:59 | 7859528 | 411644
+janeeyrediewaisevonlowood_1402_librivox | Jane Eyre, die Waise von Lowood | Charlotte Brontë |  | 4596672840 | 407063
+david_copperfield_1404_librivox | David Copperfield | Charles Dickens | 43:58:43 | 8846289876 | 375918
+undine_1503_librivox | Undine | Friedrich de la Motte Fouqué | 3:18:20 | 695767821 | 371041
+anna_karenina_deutsch_1610_librivox | Anna Karenina | Leo Tolstoy | 47:34:26 | 9741592470 | 351833
+woyzeck_librivox | Woyzeck | Georg Büchner | 55:29 | 182690936 | 334315
+adventskalender_2015_1511_librivox | Adventskalender 2015 | Various | 04:25:31 | 895320551 | 334223
+kleider_machen_leute_librivox | Kleider machen Leute | Gottfried Keller | 1:36:20 | 283112837 | 332854
+froschmaeusekrieg_1412_librivox | Der Froschmäusekrieg | Various | 1:02:53 | 239756232 | 329919
+ueber_psychoanalyse_1109_librivox | Über Psychoanalyse | Sigmund Freud | 2:02:35 | 310251581 | 323983
+maerchen_andersen_1004_librivox | Märchen | Hans Christian Andersen |  | 2480413927 | 314165
+grune_haus_1507_librivox | Das grüne Haus | Paula Dehmel | 2:55:19 | 597361561 | 311201
+schwarze_galeere_librivox | Die schwarze Galeere | Wilhelm Raabe | 1:47:25 | 343541456 | 310490
+lob_der_narrheit_1503_librivox | Das Lob der Narrheit | Desiderius Erasmus | 4:37:39 | 936851455 | 304022
+bei_tische_1708_librivox | Bei Tische, Eine gastrosophische Novelle | Otto Roquette | 1:32:47 | 319936252 | 302239
+seltsame_geschichten_1511_librivox | Seltsame Geschichten | Various | 4:25:44 | 901873462 | 301928
+sammlung_deutscher_gedichte_017_1411_librivox | Sammlung deutscher Gedichte 017 | Various | 28:47 | 104726746 | 300303
+tausend_eine_nacht_2_1512_librivox | Tausend und eine Nacht, Band 2 | Unknown | 24:30:10 | 5046126596 | 281433
+sammlung_deutscher_gedichte_015_1404_librivox | Sammlung deutscher Gedichte 015 | Various | 40:48 | 142792323 | 278857
+buchsederpandora_1501_librivox | Die Büchse der Pandora | Frank Wedekind | 2:25:20 | 485915274 | 273984
+adventskalender_2021_2111_librivox | Adventskalender 2021 | Various | 05:32:47 | 931096399 | 273644
+struwwelpeter_de2_librivox | Der Struwwelpeter | Heinrich Hoffman | 14:47 | 46603502 | 267566
+maerchen5_0803_librivox | Märchen 5 | Jacob und Wilhelm Grimm | 6:33:39 | 1220033111 | 258685
+briefe_paulus_auswahl_1506_librivox | Die Briefe des Apostels Paulus (Auswahl) | Lutherbibel | 2:53:49 | 583175014 | 256691
+spaete_rache_1207_librivox | Späte Rache | Sir Arthur Conan Doyle | 4:07:41 | 623568531 | 254671
+goetzendaemmerung_ry_librivox | Götzendämmerung | Friedrich Nietzsche | 3:53:30 | 622334651 | 244414
+elixiere_teufel_librivox | Die Elixiere des Teufels | E.T.A. Hoffmann | 12:24:50 | 2267187184 | 242882
+menschenimkrieg_1403_librivox | Menschen im Krieg | Andreas Latzko | 04:30:46 | 857394764 | 236775
+nicht_der_morder_1709_librivox | Nicht der Mörder, der Ermordete ist schuldig | Franz Werfel | 4:28:46 | 966214204 | 235946
+bildnis_dorian_gray_ak_librivox | Das Bildnis des Dorian Gray | Oscar Wilde | 10:32:26 | 1933988806 | 235122
+grimms_maerchen-3_librivox | Märchen 3 | Jacob and Wilhelm Grimm | 6:07:44 | 1102478530 | 233537
+ahnen_1-1_ingo_1508_librivox | Die Ahnen, Bd. I.1 Ingo | Gustav Freytag | 7:29:03 | 1505081110 | 232237
+max_und_moritz2_librivox | Max und Moritz | Wilhelm Busch | 16:53 | 53923932 | 231458
+effibriest_0804_librivox | Effi Briest | Theodor Fontane | 11:23:12 | 2055733050 | 221970
+sammlung_kurzer_deutscher_prosa_046_1508_librivox | Sammlung kurzer deutscher Prosa 046 | Various | 4:47:26 | 976565981 | 218484
+vampir_1204_librivox | Der Vampir | Wladyslaw Reymont | 8:20:55 | 1251561443 | 217753
+florentinische_naechte_1511_librivox | Florentinische Nächte | Heinrich Heine | 2:33:40 | 523809372 | 216533
+auf_zwei_planeten_0907_librivox | Auf zwei Planeten | Kurd Laßwitz | 25:16:27 | 4694969879 | 213398
+das_marchen_vom_karfunkelstein_1412_librivox | Das Märchen vom Karfunkelstein | Ludwig Ganghofer | 3:49:01 | 786803530 | 209600
+ahnen_brueder_vom_deutschen_hause_2010_librivox | Die Ahnen - Die Brüder vom deutschen Hause | Gustav Freytag | 11:44:45 | 1984002933 | 209474
+leonce_und_lena_librivox | Leonce und Lena | Georg Büchner | 1:07:24 | 199880957 | 204930
+homo_sapiens_romantrilogie_1508_librivox | Homo sapiens - Romantrilogie | Stanisław Przybyszewski | 12:10:12 | 2436828317 | 203402
+sammlung_deutscher_gedichte_018_1506_librivox | Sammlung deutscher Gedichte 018 | Various | 1:05:37 | 215357014 | 196299
+faust1_1012_librivox | Faust - Der Tragödie erster Teil | Johann Wolfgang von Goethe | 6:00:44 | 907189863 | 195124
+frau_bovary_1605_librivox | Frau Bovary | Gustave Flaubert | 14:12:52 | 2947613941 | 188877
+adventskalender_2020_2011_librivox | Adventskalender 2020 | Various | 04:09:43 | 716501552 | 187970
+odyssee_0811_librivox | Odyssee | Homer | 28:45:05 | 5035013755 | 186407
+ahnen1ingraban_2003_librivox | Die Ahnen, Bd. I.2 Ingraban | Gustav Freytag | 6:45:06 | 1037622164 | 185452
+verkaufte_grossmutter_1604_librivox | Die verkaufte Großmutter | Hanns Heinz Ewers | 7:21:50 | 1474064914 | 183029
+michael_kohlhaas_p_librivox | Michael Kohlhaas | Heinrich von Kleist | 4:02:48 | 762555956 | 182313
+androgyne_2307_librivox | Androgyne | Stanisław Przybyszewski | 2:09:04 | 342419840 | 181809
+adventskalender_2019_1911_librivox | Adventskalender 2019 | Various | 4:26:15 | 1004888500 | 181119
+ahnenmarcuskonig_2104_librivox | Die Ahnen - Marcus König | Gustav Freytag | 12:27:11 | 2094600120 | 180443
+erdgeist_1402_librivox | Erdgeist | Frank Wedekind | 2:39:06 | 531960923 | 174530
+adventskalender_2022_2211_librivox | Adventskalender 2022 | Various | 05:30:57 | 918801575 | 173336
+hund_von_baskerville_1709_librivox | Der Hund von Baskerville | Sir Arthur Conan Doyle | 06:59:50 | 1447502126 | 170899
+sammlung_deutscher_gedichte_019_1510_librivox | Sammlung deutscher Gedichte 019 | Various | 30:04 | 107228655 | 170604
+samtliche_schriften_1911-1921_3_1412_librivox | Sämtliche Schriften 1911-1921, Teil 3 | Carl von Ossietzky | 3:38:32 | 747150982 | 169368
+heidi_kann_brauchen_sk_librivox | Heidi kann brauchen, was es gelernt hat | Johanna Spyri | 4:01:04 | 710076224 | 168641
+selbstmordverein_jn5_librivox | Der Selbstmordverein | Franziska Gräfin zu Reventlow | 4:49:28 | 851447816 | 168416
+uber_die_iphigenie_auf_tauris_1401_librivox | Über die Iphigenie auf Tauris | Friedrich Schiller | 1:17:44 | 263664736 | 166731
+unser_taglich_gift_1803_librivox | Unser täglich Gift | Otfried Krzyzanowski | 0:38:13 | 147304733 | 159823
+niels_holgersen_I_1201 | Niels Holgersens wunderbare Reise mit den Wildgänsen - Erster Teil | Selma Lagerlöf | 11:34:06 | 1756998222 | 157866
+heidis_lehrjahre_0710 | Heidis Lehr- und Wanderjahre | Johanna Spyri | 6:00:10 | 1054771021 | 156159
+sammlung_kurzer_deutscher_prosa_047_1510_librivox | Sammlung kurzer deutscher Prosa 047 | Various | 2:42:12 | 558254927 | 154570
+benno_stehkragen_1904_librivox | Benno Stehkragen | Karl Ettlinger | 5:10:01 | 1045240038 | 153949
+priester_detektiv_1009_librivox | Priester und Detektiv (Pater Brown Geschichten) | Chesterton, G. K. | 9:57:38 | 1502576549 | 150743
+kinder_hausmaerchen_1206_librivox | Kinder- und Hausmärchen (1812/15) Teil 1 | Jacob & Wilhelm Grimm | 4:54:48 | 750343109 | 147633
+maerchen4_0712_librivox | Märchen 4 | Jacob and Wilhelm Grimm | 4:29:16 | 808722276 | 145841
+von_teufeln_geistern_und_damonen_auswahl_1608_librivox | Von Teufeln, Geistern und Dämonen (Auswahl) | Gustavo Adolfo Bécquer | 7:14:59 | 1475712139 | 144084
+verwandlung_mw_0811_librivox | Die Verwandlung | Franz Kafka | 2:08:02 | 380362547 | 142328
+achilleis_0911_librivox | Achilleis | Johann Wolfgang von Goethe | 1:30:07 | 277500371 | 141049
+academische_gedichte_1912_librivox | Academische Gedichte | Johann Philipp Lorenz Withof | 2:36:58 | 534522910 | 140351
+die_ahnen_-_die_geschwister_2208_librivox | Die Ahnen - Die Geschwister | Gustav Freytag | 11:11:45 | 1897841344 | 138206
+mord_im_ballsaal_1812_librivox | Der Mord im Ballsaal | Matthias Blank | 3:17:21 | 656321138 | 131065
+tagebuch_einer_verlorenen_1705_librivox | Tagebuch einer Verlorenen | Margarete Böhme | 11:23:54 | 2259474783 | 130264
+nibelungenlied_ak_librivox | Das Nibelungenlied | Karl Joseph Simrock (Übers.) | 12:17:01 | 2260422121 | 129772
+alte_haus_1303_librivox | Das alte Haus | Friedrich Gerstäcker | 7:28:56 | 1132518148 | 129650
+rulaman_1908_librivox | Rulaman | Christoph David Friedrich Weinland | 9:48:40 | 1988425253 | 128570
+die_lieder_der_bilitis_2108_librivox | Die Lieder der Bilitis | Pierre Louÿs | 04:18:12 | 766493287 | 127965
+sammlung_deutscher_gedichte_020_1602_librivox | Sammlung deutscher Gedichte 020 | Various | 1:14:16 | 251882025 | 126911
+sieben_gedichte_1607_librivox | Sieben Gedichte | Edgar Allan Poe | 38:16 | 133975173 | 125335
+fabeln_und_erzahlungen_1702_librivox | Fabeln und Erzählungen | Christian Fürchtegott Gellert | 4:44:07 | 963354464 | 121929
+erdensohne_2407_librivox | Erdensöhne | Stanisław Przybyszewski | 04:43:26 | 744300458 | 121715
+hymnen_nacht_ek_librivox | Hymnen an die Nacht | Novalis (Friedrich von Hardenberg) | 32:04 | 98052808 | 120512
+erzaehlungen_kinder_1109_librivox | Erzaehlungen fuer Kinder von Various | Various | 2:47:11 | 426598370 | 119232
+allerleigelehrte_2006_librivox | Allerlei Gelehrte | Hans Hoffmann | 6:10:16 | 1028093569 | 118946
+sommer_in_london_0711_librivox | Ein Sommer in London | Theodor Fontane | 7:22:50 | 1326680698 | 117242
+sodom_2307_librivox | Sodom | Egmont Colerus | 7:52:14 | 1338604609 | 115076
+ausgewahlte_gedichte_1812_librivox | Ausgewählte Gedichte | Adam Oehlenschläger | 1:04:55 | 221901083 | 114840
+erzaehlungen_poe_1004_librivox | Erzählungen | Edgar Allan Poe | 21:21:21 | 3346722110 | 111773
+braune_maerchen_1102_librivox | Braune Märchen | Alexander Freiherr von Ungern-Sternberg | 7:27:14 | 1118452595 | 111228
+sammlung_kurzer_deutscher_prosa_048_1605_librivox | Sammlung kurzer deutscher Prosa 048 | Various | 3:56:31 | 783086337 | 106806
+davidcopperfieldband07version2_2501_librivox | David Copperfield, Band 07 (Version 2) | Charles Dickens | 04:23:10 | 761466334 | 106383
+tausend_und_eine_nacht_band_4_1903_librivox | Tausend und eine Nacht, Band 4 | Unknown | 19:47:39 | 4046200282 | 106261
+muenchhausen_0810_librivox | Münchhausen | Gottfried August B&uuml;rger | 3:22:27 | 605137118 | 105420
+sammlung_deutscher_gedichte_021_1605_librivox | Sammlung deutscher Gedichte 021 | Various | 43:31 | 152033785 | 104951
+simplicissimus_teil1_0910_librivox | Der abenteuerliche Simplicissimus Teutsch, Teil 1 | Hans Jakob Christoffel von Grimmelshausen | 12:39:11 | 2355592813 | 104464
+sammlung_deutscher_gedichte_022_1608_librivox | Sammlung deutscher Gedichte 022 | Various | 29:46 | 105782669 | 103892
+adventskalender_2023_2311_librivox | Adventskalender 2023 |  | 04:24:06 | 737706149 | 102514
+frankenstein_de_1211_librivox | Frankenstein oder Der moderne Prometheus | Mary Wollstonecraft Shelley | 7:46:09 | 1176928450 | 101224
+johann_1608_librivox | Johann | Otto Roquette | 1:16:23 | 262164437 | 100049
+fruehen_kraenze_1908_librivox | Die frühen Kränze | Stefan Zweig | 1:18:09 | 273572358 | 99794
+norwegische_volksmahrchen_1812_librivox | Norwegische Volksmährchen | Peter Christen Asbjørnsen; Jørgen Engebretsen Moe | 6:12:36 | 1279375992 | 98225
+zeichendervier_1308_librivox | Das Zeichen der Vier | Arthur Conan Doyle | 4:43:32 | 712710512 | 96913
+dichtungwahrheit_0909_librivox | Aus meinem Leben. Dichtung und Wahrheit | Johann Wolfgang Goethe | 51:52:16 | 9592587281 | 96281
+gullivers_reisen_2004_librivox | Gullivers Reisen | Jonathan Swift | 13:12:13 | 2364801394 | 94309
+ruebezahlbuch_1807_librivox | Das Rübezahlbuch | Carl Hauptmann | 03:40:59 | 737577096 | 94009
+psyche_1903_librivox | Psyche | Hugo von Blomberg | 1:31:41 | 312232621 | 93933
+adventskalender2024_2411_librivox | Adventskalender 2024 | Various | 05:13:53 | 867356444 | 92391
+romanderxii_2207_librivox | Der Roman der XII | Herbert Eulenberg | 11:05:22 | 1878322229 | 92338
+armadale_-_3_band_2310_librivox | Armadale - 3. Band | Wilkie Collins | 6:18:36 | 1096330270 | 92189
+alraune_2010_librivox | Alraune | Hanns Heinz Ewers | 10:16:15 | 1755022592 | 90801
+sammlung_deutscher_gedichte_029_1905_librivox | Sammlung deutscher Gedichte 029 | Various | 00:33:04 | 121131633 | 90312
+winnetou_iii_2209_librivox | Winnetou III | Karl May | 14:50:42 | 2437834971 | 89798
+ligeia_und_andere_novellen_1608_librivox | Ligeia und Andere Novellen | Edgar Allan Poe | 3:34:33 | 730784952 | 89553
+daodejing_deutsch_0906_librivox | Daodejing (Tao Te Ching) | Laozi | 1:59:21 | 367596284 | 89504
+toten_seelen_1704_librivox | Die toten Seelen | Nikolai Vasilievich Gogol | 17:18:04 | 3520264409 | 88714
+jenseitdestweed_1812_librivox | Jenseit des Tweed | Theodor Fontane | 10:00:43 | 2005164178 | 88381
+briefe_aus_dem_gefaengnis_hok_librivox | Briefe aus dem Gefängnis | Rosa Luxemburg | 1:51:19 | 347727990 | 87776
+geschichte_des_kreigs | Geschichte des dreißigjährigen Kriegs | Friedrich Schiller | 25:34:25 | 4516599065 | 86472
+wunderwelten_1911_librivox | Wunderwelten | Friedrich Wilhelm Mader | 13:29:59 | 2764595009 | 86465
+maedchen_von_moorhof_1209_librivox | Das Mädchen vom Moorhof | Selma Lagerlöf | 2:16:33 | 348592338 | 85776
+ausprager_2102_librivox | Aus Prager Gassen und Nächten | Egon Erwin Kisch | 07:34:47 | 1286252111 | 85718
+onkeltomshuette_crow_1210 | Onkel Toms Hütte | Harriett Beecher Stowe | 20:41:21 | 3105588849 | 85541
+dergolem_hok_librivox | Der Golem | Gustav Meyrink | 9:01:30 | 1599361583 | 84462
+armadale_-_6_band_2312_librivox | Armadale - 6. Band | Wilkie Collins | 6:12:39 | 1413229584 | 82980
+### Abfrage: collection:librivoxaudio AND (Hörbuch OR deutsch)
+8thanniversary_1308_librivox | LibriVox 8th Anniversary Collection | Various | 21:12:42 | 3195474161 | 2657086
+alices_abenteuer_0911 | Alice's Abenteuer im Wunderland | Lewis Carroll | 2:50:58 | 533279333 | 1199535
+tausend_und_eine_nacht_1_1504_librivox | Tausend und eine Nacht, Band 1 | Unknown | 22:18:39 | 4628766971 | 871587
+maerchen_1309_librivox | Märchen | Oscar Wilde | 05:46:53 | 1151718686 | 748607
+kafka_galerie_librivox | Auf der Galerie | Franz Kafka | 3:01 | 10898891 | 711483
+bildergeschichten_librivox | Bildergeschichten | Wilhelm Busch | 3:53:10 | 704079679 | 700208
+ueber_die_weiber_librivox | Über die Weiber | Arthur Schopenhauer | 11:07 | 34719382 | 683511
+samtlicheschriften_1911-1921_teil1_1309_librivox | Sämtliche Schriften 1911-1921, Teil 1 | Carl von Ossietzky | 07:05:33 | 1468114320 | 642308
+tomsawyer_crow_librivox | Die Abenteuer Tom Sawyers | Mark Twain | 7:20:52 | 1097868965 | 605982
+20000_meilen_1001_librivox | Zwanzigtausend Meilen unter'm Meer | Jules Verne |  | 2791832746 | 506455
+tolle_mensch_librivox | Der tolle Mensch | Friedrich Nietzsche | 4:48 | 14354186 | 492311
+reise_um_die_erde_in_80_tagen_1510_librivox | Reise um die Erde in 80 Tagen | Jules Verne | 08:28:34 | 1735624556 | 463923
+manifestkommunistischen_librivox | Manifest der Kommunistischen Partei, von Karl Marx und Friedrich Engels | Karl Marx and Friedrich Engels | 2:22.09 | 450007912 | 443819
+kafka_laerm_librivox | Großer Lärm | Franz Kafka | 1:59 | 7859528 | 411644
+david_copperfield_1404_librivox | David Copperfield | Charles Dickens | 43:58:43 | 8846289876 | 375918
+anna_karenina_deutsch_1610_librivox | Anna Karenina | Leo Tolstoy | 47:34:26 | 9741592470 | 351833
+adventskalender_2015_1511_librivox | Adventskalender 2015 | Various | 04:25:31 | 895320551 | 334223
+kleider_machen_leute_librivox | Kleider machen Leute | Gottfried Keller | 1:36:20 | 283112837 | 332854
+ueber_psychoanalyse_1109_librivox | Über Psychoanalyse | Sigmund Freud | 2:02:35 | 310251581 | 323983
+maerchen_andersen_1004_librivox | Märchen | Hans Christian Andersen |  | 2480413927 | 314165
+grune_haus_1507_librivox | Das grüne Haus | Paula Dehmel | 2:55:19 | 597361561 | 311201
+bei_tische_1708_librivox | Bei Tische, Eine gastrosophische Novelle | Otto Roquette | 1:32:47 | 319936252 | 302239
+sammlung_deutscher_gedichte_015_1404_librivox | Sammlung deutscher Gedichte 015 | Various | 40:48 | 142792323 | 278857
+buchsederpandora_1501_librivox | Die Büchse der Pandora | Frank Wedekind | 2:25:20 | 485915274 | 273984
+adventskalender_2021_2111_librivox | Adventskalender 2021 | Various | 05:32:47 | 931096399 | 273644
+spaete_rache_1207_librivox | Späte Rache | Sir Arthur Conan Doyle | 4:07:41 | 623568531 | 254671
+elixiere_teufel_librivox | Die Elixiere des Teufels | E.T.A. Hoffmann | 12:24:50 | 2267187184 | 242882
+menschenimkrieg_1403_librivox | Menschen im Krieg | Andreas Latzko | 04:30:46 | 857394764 | 236775
+bildnis_dorian_gray_ak_librivox | Das Bildnis des Dorian Gray | Oscar Wilde | 10:32:26 | 1933988806 | 235122
+effibriest_0804_librivox | Effi Briest | Theodor Fontane | 11:23:12 | 2055733050 | 221970
+vampir_1204_librivox | Der Vampir | Wladyslaw Reymont | 8:20:55 | 1251561443 | 217753
+auf_zwei_planeten_0907_librivox | Auf zwei Planeten | Kurd Laßwitz | 25:16:27 | 4694969879 | 213398
+das_marchen_vom_karfunkelstein_1412_librivox | Das Märchen vom Karfunkelstein | Ludwig Ganghofer | 3:49:01 | 786803530 | 209600
+leonce_und_lena_librivox | Leonce und Lena | Georg Büchner | 1:07:24 | 199880957 | 204930
+faust1_1012_librivox | Faust - Der Tragödie erster Teil | Johann Wolfgang von Goethe | 6:00:44 | 907189863 | 195124
+adventskalender_2020_2011_librivox | Adventskalender 2020 | Various | 04:09:43 | 716501552 | 187970
+odyssee_0811_librivox | Odyssee | Homer | 28:45:05 | 5035013755 | 186407
+adventskalender_2019_1911_librivox | Adventskalender 2019 | Various | 4:26:15 | 1004888500 | 181119
+ahnenmarcuskonig_2104_librivox | Die Ahnen - Marcus König | Gustav Freytag | 12:27:11 | 2094600120 | 180443
+erdgeist_1402_librivox | Erdgeist | Frank Wedekind | 2:39:06 | 531960923 | 174530
+adventskalender_2022_2211_librivox | Adventskalender 2022 | Various | 05:30:57 | 918801575 | 173336
+hund_von_baskerville_1709_librivox | Der Hund von Baskerville | Sir Arthur Conan Doyle | 06:59:50 | 1447502126 | 170899
+heidi_kann_brauchen_sk_librivox | Heidi kann brauchen, was es gelernt hat | Johanna Spyri | 4:01:04 | 710076224 | 168641
+selbstmordverein_jn5_librivox | Der Selbstmordverein | Franziska Gräfin zu Reventlow | 4:49:28 | 851447816 | 168416
+uber_die_iphigenie_auf_tauris_1401_librivox | Über die Iphigenie auf Tauris | Friedrich Schiller | 1:17:44 | 263664736 | 166731
+msw031_2203_librivox | Multilingual Short Works Collection 031 - Poetry & Prose | Various | 2:25:05 | 373294596 | 162359
+unser_taglich_gift_1803_librivox | Unser täglich Gift | Otfried Krzyzanowski | 0:38:13 | 147304733 | 159823
+niels_holgersen_I_1201 | Niels Holgersens wunderbare Reise mit den Wildgänsen - Erster Teil | Selma Lagerlöf | 11:34:06 | 1756998222 | 157866
+heidis_lehrjahre_0710 | Heidis Lehr- und Wanderjahre | Johanna Spyri | 6:00:10 | 1054771021 | 156159
+benno_stehkragen_1904_librivox | Benno Stehkragen | Karl Ettlinger | 5:10:01 | 1045240038 | 153949
+priester_detektiv_1009_librivox | Priester und Detektiv (Pater Brown Geschichten) | Chesterton, G. K. | 9:57:38 | 1502576549 | 150743
+kinder_hausmaerchen_1206_librivox | Kinder- und Hausmärchen (1812/15) Teil 1 | Jacob & Wilhelm Grimm | 4:54:48 | 750343109 | 147633
+achilleis_0911_librivox | Achilleis | Johann Wolfgang von Goethe | 1:30:07 | 277500371 | 141049
+academische_gedichte_1912_librivox | Academische Gedichte | Johann Philipp Lorenz Withof | 2:36:58 | 534522910 | 140351
+nibelungenlied_ak_librivox | Das Nibelungenlied | Karl Joseph Simrock (Übers.) | 12:17:01 | 2260422121 | 129772
+alte_haus_1303_librivox | Das alte Haus | Friedrich Gerstäcker | 7:28:56 | 1132518148 | 129650
+rulaman_1908_librivox | Rulaman | Christoph David Friedrich Weinland | 9:48:40 | 1988425253 | 128570
+die_lieder_der_bilitis_2108_librivox | Die Lieder der Bilitis | Pierre Louÿs | 04:18:12 | 766493287 | 127965
+msw_034_2306_librivox | Multilingual Short Works Collection 034 - Poetry & Prose | Various | 4:32:33 | 753575953 | 124385
+fabeln_und_erzahlungen_1702_librivox | Fabeln und Erzählungen | Christian Fürchtegott Gellert | 4:44:07 | 963354464 | 121929
+hymnen_nacht_ek_librivox | Hymnen an die Nacht | Novalis (Friedrich von Hardenberg) | 32:04 | 98052808 | 120512
+erzaehlungen_kinder_1109_librivox | Erzaehlungen fuer Kinder von Various | Various | 2:47:11 | 426598370 | 119232
+sommer_in_london_0711_librivox | Ein Sommer in London | Theodor Fontane | 7:22:50 | 1326680698 | 117242
+ausgewahlte_gedichte_1812_librivox | Ausgewählte Gedichte | Adam Oehlenschläger | 1:04:55 | 221901083 | 114840
+erzaehlungen_poe_1004_librivox | Erzählungen | Edgar Allan Poe | 21:21:21 | 3346722110 | 111773
+braune_maerchen_1102_librivox | Braune Märchen | Alexander Freiherr von Ungern-Sternberg | 7:27:14 | 1118452595 | 111228
+tausend_und_eine_nacht_band_4_1903_librivox | Tausend und eine Nacht, Band 4 | Unknown | 19:47:39 | 4046200282 | 106261
+muenchhausen_0810_librivox | Münchhausen | Gottfried August B&uuml;rger | 3:22:27 | 605137118 | 105420
+simplicissimus_teil1_0910_librivox | Der abenteuerliche Simplicissimus Teutsch, Teil 1 | Hans Jakob Christoffel von Grimmelshausen | 12:39:11 | 2355592813 | 104464
+adventskalender_2023_2311_librivox | Adventskalender 2023 |  | 04:24:06 | 737706149 | 102514
+frankenstein_de_1211_librivox | Frankenstein oder Der moderne Prometheus | Mary Wollstonecraft Shelley | 7:46:09 | 1176928450 | 101224
+fruehen_kraenze_1908_librivox | Die frühen Kränze | Stefan Zweig | 1:18:09 | 273572358 | 99794
+norwegische_volksmahrchen_1812_librivox | Norwegische Volksmährchen | Peter Christen Asbjørnsen; Jørgen Engebretsen Moe | 6:12:36 | 1279375992 | 98225
+zeichendervier_1308_librivox | Das Zeichen der Vier | Arthur Conan Doyle | 4:43:32 | 712710512 | 96913
+dichtungwahrheit_0909_librivox | Aus meinem Leben. Dichtung und Wahrheit | Johann Wolfgang Goethe | 51:52:16 | 9592587281 | 96281
+gullivers_reisen_2004_librivox | Gullivers Reisen | Jonathan Swift | 13:12:13 | 2364801394 | 94309
+ruebezahlbuch_1807_librivox | Das Rübezahlbuch | Carl Hauptmann | 03:40:59 | 737577096 | 94009
+adventskalender2024_2411_librivox | Adventskalender 2024 | Various | 05:13:53 | 867356444 | 92391
+romanderxii_2207_librivox | Der Roman der XII | Herbert Eulenberg | 11:05:22 | 1878322229 | 92338
+sammlung_deutscher_gedichte_029_1905_librivox | Sammlung deutscher Gedichte 029 | Various | 00:33:04 | 121131633 | 90312
+winnetou_iii_2209_librivox | Winnetou III | Karl May | 14:50:42 | 2437834971 | 89798
+daodejing_deutsch_0906_librivox | Daodejing (Tao Te Ching) | Laozi | 1:59:21 | 367596284 | 89504
+christmascarols2011_1112_librivox | Christmas Carol Collection 2011 | Various | 1:08:53 | 179882583 | 88889
+toten_seelen_1704_librivox | Die toten Seelen | Nikolai Vasilievich Gogol | 17:18:04 | 3520264409 | 88714
+briefe_aus_dem_gefaengnis_hok_librivox | Briefe aus dem Gefängnis | Rosa Luxemburg | 1:51:19 | 347727990 | 87776
+geschichte_des_kreigs | Geschichte des dreißigjährigen Kriegs | Friedrich Schiller | 25:34:25 | 4516599065 | 86472
+maedchen_von_moorhof_1209_librivox | Das Mädchen vom Moorhof | Selma Lagerlöf | 2:16:33 | 348592338 | 85776
+ausprager_2102_librivox | Aus Prager Gassen und Nächten | Egon Erwin Kisch | 07:34:47 | 1286252111 | 85718
+onkeltomshuette_crow_1210 | Onkel Toms Hütte | Harriett Beecher Stowe | 20:41:21 | 3105588849 | 85541
+dergolem_hok_librivox | Der Golem | Gustav Meyrink | 9:01:30 | 1599361583 | 84462
+totenstadt_0808_librivox | Die Totenstadt | Robert Kraft | 1:15:53 | 226297127 | 82961
+todteninsel_crow_librivox | Die Todteninsel | Richard Voß | 1:24:46 | 213892635 | 80180
+sammlung_kurzer_deutscher_prosa_056_2106_librivox | Sammlung kurzer deutscher Prosa 056 | Various | 2:07:16 | 360623531 | 78826
+nachtstuecke_0903_librivox | Nachtstücke | E.T.A. Hoffmann | 14:08:26 | 2120992453 | 78507
+roemische_geschichte_01_red_librivox | Roemische Geschichte Buch 1 | Theodor Mommsen | 15:14:58 | 2701110902 | 77593
+waffennieder_1912_librivox | Die Waffen nieder! : eine Lebensgeschichte (version 2) | Bertha von Suttner | 16:52:40 | 3439995543 | 75900
+reise_nach_dem_mittelpunkt_der_erde_2012_librivox | Reise nach dem Mittelpunkt der Erde | Jules Verne | 08:04:30 | 1397503458 | 75008
+nielsholgersens_2_1208_librivox | Niels Holgersens wunderbare Reise mit den Wildgänsen - Zweiter Teil | Selma Lagerlöf | 12:28:09 | 1897315064 | 74703
+deutschland_wintermaerchen_0910_librivox | Deutschland. Ein Wintermärchen | Heinrich Heine | 1:28:43 | 275768318 | 74501
+kabaleundliebe_1009_librivox | Kabale und Liebe - Ein bürgerliches Trauerspiel | Friedrich Schiller | 6:18:12 | 944807787 | 73688
+tiefes_geheimnis_1201_librivox | Ein tiefes Geheimnis | Wilkie Collins | 16:49:59 | 2536015129 | 73486
+kasperlereisen_1210_librivox | Kasperle auf Reisen | Josephine Siebe | 5:01:23 | 759059982 | 72420
+ansiedelung_meeresgrunde_0807_librivox | Die Ansiedelung auf dem Meeresgrunde | Robert Kraft | 1:16:52 | 228014578 | 71052
+buch_der_lieder_0911_librivox | Buch der Lieder | Heinrich Heine | 5:06:02 | 942189686 | 70675
+tausend_und_eine_nacht_band_3_1807_librivox | Tausend und eine Nacht, Band 3 | Unknown | 26:14:13 | 5370828966 | 70298
+LibrivoxM4bCollectionAudiobooks_7 | Librivox M4B collection Audiobooks_7 | Librivox Volunteers |  | 311772415672 | 69781
+adventskalender_2010_librivox | Adventskalender 2010 | Various | 3:08:45 | 485064330 | 69594
+kleine_lord_elli_librivox | Der kleine Lord | Frances Hodgson Burnett | 4:38:27 | 868723565 | 69507
+schriften_liebermann_1811_librivox | Gesammelte Schriften | Max Liebermann | 6:52:54 | 1387903614 | 69489
+interessante_kriminal-prozesse_teil_2_2201_librivox | Interessante Kriminal-Prozesse, Teil 2 | Hugo Friedländer; Erich Sello | 48:18:53 | 8126035920 | 68117
+der_amoklaufer_1804_librivox | Der Amokläufer | Stefan Zweig | 2:38:20 | 551950771 | 67967
+casanovas_heimfahrt_0903_librivox | Casanovas Heimfahrt | Arthur Schnitzler | 4:26:58 | 793393619 | 67916
+ilias_0810_librivox | Ilias | Homer | 36:05:08 | 6336957068 | 67867
+stoertebeker_1001_librivox | Claus Stoertebeker | Georg Engel | 14:48:59 | 2751971639 | 67794
+reise_d_england_0810_librivox | Reise durch England und Schottland | Johanna Schopenhauer | 10:46:31 | 1611528755 | 67674
+adventskalender2025_2511_librivox | Adventskalender 2025 |  | 03:26:24 | 579594897 | 67669
+lustige_geschichten_1709_librivox | Lustige Geschichten | Anton Chekhov | 04:50:40 | 1013048242 | 67486
+modernrussianpoetryanthology_1308_librivox | Modern Russian Poetry: An Anthology | Various | 3:20:29 | 702877774 | 66944
+tagebuch_eines_halbwuchsigen_madchens_2104_librivox | Tagebuch eines halbwüchsigen Mädchens | Hermine Hug-Hellmuth | 09:11:25 | 1547737543 | 66383
+don_quixote_band_1_1805_librivox | Leben und Taten des scharfsinnigen Edlen Don Quixote von la Mancha, Band 1 | Miguel de Cervantes Saavedra | 12:24:56 | 2673883298 | 65134
+weihnachtsabend_geistergeschichte_1012_librivox | Der Weihnachtsabend - Eine Geistergeschichte | Charles Dickens | 2:29:39 | 389293072 | 64536
+familie_pfaeffling_1001_librivox | Die Familie Pfäffling | Agnes Sapper | 7:20:26 | 1371365151 | 64535
+die_nase_hk_librivox | Die Nase | Nikolai Wasiliewitsch Gogol | 1:05:59 | 195149984 | 64449
+kinderundhausmaerchen03_1306_librivox | Kinder- und Hausmaerchen | Jacob & Wilhelm Grimm | 8:14:57 | 1256360282 | 64398
+walpurgisnacht_1207_librivox | Die Walpurgisnacht | Heinrich Zschokke | 1:24:51 | 214722340 | 64238
+warmes_polarland_dw_librivox | Das Warme Polarland | Ernst Constantin | 4:51:00 | 861946442 | 64237
+flametti_1803_librivox | Flametti, oder Vom Dandyismus der Armen | Hugo Ball | 6:03:39 | 1236031770 | 63768
+scuderi_hok_librivox | Das Fräulein von Scuderi | E.T.A. Hoffmann | 3:19:44 | 591266373 | 63371
+unser_wald_2105_librivox | Unser Wald | Curt Grottewitz | 06:55:36 | 1162721522 | 63086
+marchen_almanach_hok | Märchen-Almanach auf das Jahr 1826 | Wilhelm Hauff | 4:42:58 | 836615167 | 62534
+doppelganger_2402_librivox | Der Doppelgänger | Fyodor Dostoyevsky | 07:52:25 | 1335085692 | 62464
+wesen_und_ziel_des_pazifismus_1804_librivox | Kurze Aufklärungen über Wesen und Ziel des Pazifismus | Alfred Hermann Fried | 0:46:42 | 152443424 | 62002
+volkssagen_von_pommern_und_rugen_1803_librivox | Die Volkssagen von Pommern und Rügen | Jodocus Deodatus Hubertus Temme | 12:02:33 | 2485933918 | 61287
+werde_die_du_bist_1705_librivox | Werde, die Du bist | Hedwig Dohm | 02:48:18 | 568386136 | 60980
+landarzt_0807_librivox | Ein Landarzt. Kleine Erzählungen | Franz Kafka | 1:52:37 | 338611780 | 60752
+meine_holle_2006_librivox | Meine Hölle | Jakob Elias Poritzky | 4:12:48 | 703475782 | 60708
+totegast_hok_librivox | Der tote Gast | Heinrich Zschokke | 4:10:00 | 632566238 | 60351
+faust1teil_1412_librivox | Faust: Der Tragödie erster Teil | Johann Wolfgang von Goethe | 04:51:36 | 971648968 | 59824
+gruene_heinrich_0912 | Der Gruene Heinrich (zweite Fassung) | Gottfried Keller | 37:25:34 | 6949626595 | 59791
+heinrich_von_ofterdingen_2101_librivox | Heinrich von Ofterdingen | Novalis | 06:56:49 | 1162966758 | 59243
+romische_geschichte4_librivox | Römische Geschichte Buch 4 | Theodor Mommsen | 32:45:43 | 5796802381 | 58843
+sammlung_kurzer_deutscher_prosa_057_2112_librivox | Sammlung kurzer deutscher Prosa 057 | Various | 1:08:53 | 204317188 | 58449
+kinderundhausmaerchen_vol2_1209_librivox | Kinder- und Hausmaerchen (1812/15) Teil 2 | Jacob & Wilhelm Grimm | 3:54:10 | 600098826 | 58069
+bauern_abc_2212_librivox | Bauern ABC | Franz Graf von Pocci | 2:58:18 | 506187669 | 57852
+wrack_hf_librivox | Das Wrack | Friedrich Gerstäcker | 1:41.06 | 257160851 | 57433
+sammlung_kurzer_deutscher_prosa_053_2001_librivox | Sammlung kurzer deutscher Prosa 053 | Various | 03:06:27 | 643487235 | 57016
+kunterbuntergang_des_abendlandes_2010_librivox | Kunterbuntergang des Abendlandes. Grotesken | Klabund | 3:01:38 | 521824888 | 56989
+in_der_strafkolonie_0810_librivox | In der Strafkolonie | Franz Kafka | 1:09:50 | 206909727 | 56938
+first_violin_sg_librivox | The First Violin | Jessie Fothergill | 15:50:05 | 2370435084 | 56892
+geschichte_niederlande_0901_librivox | Geschichte des Abfalls der vereinigten Niederlande von der spanischen Regierung | Friedrich Schiller | 27:59:57 | 4918182494 | 56601
