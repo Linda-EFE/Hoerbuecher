@@ -3,9 +3,17 @@ on:
   workflow_dispatch:
   push:
     paths: ["tools/suche.py", ".github/workflows/suche.yml"]
+permissions:
+  contents: write
 jobs:
   suche:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/suche.py
+      - run: python3 tools/suche.py > tools/suchergebnis.txt
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/suchergebnis.txt
+          git commit -m "Suchergebnis aktualisiert" || exit 0
+          git push
