@@ -1,0 +1,67 @@
+==> max_und_moritz_librivox
+    01.mp3 Max und Moritz 01-07
+==> struwwelpeter_de2_librivox
+    01.mp3 Der Struwwelpeter, oder: Lustige Geschichten und drollige Bilder
+==> grimm_maerchen_1_librivox
+    01.mp3 219_vom_fischer_und_seiner_frau
+    02.mp3 220_vom_klugen_schneiderlein
+    03.mp3 222_von_dem_maeuschen_voegelchen_und_der_bratwurst
+    04.mp3 114_erbsenprobe
+    05.mp3 120_haselrute
+    06.mp3 122_kornaehre
+    07.mp3 123_kristallkugel
+    08.mp3 124_die_lebenszeit
+    09.mp3 126_die_nixe_im_teich
+    10.mp3 130_schlickerlinge
+    11.mp3 131_scholle
+    12.mp3 132_sterntaler
+    13.mp3 134_wassernixe
+    14.mp3 135_die_wichtelmaenner
+    15.mp3 144_drei_maennlein_im_walde
+    16.mp3 145_drei_schlangenblatter
+    17.mp3 146_drei_spinnerinnen
+    18.mp3 148_drei_granen_zweige
+    19.mp3 160_die_sieben_raben
+    20.mp3 163_die_ungleichen_kinder_evas
+    21.mp3 166_weisse_schlange
+    22.mp3 171_zwoelf_brueder
+    23.mp3 180_frau_holle
+    24.mp3 185_haensel_und_gretel
+    25.mp3 188_hans_im_glueck
+    26.mp3 191_jorinde_und_joringel
+    27.mp3 193_koenig_drosselbart
+    28.mp3 194_katze_und_maus_in_gesellschaft
+    29.mp3 200_fuerchten_lernen
+    30.mp3 202_meister_pfriem
+    31.mp3 203_muttergottesglaeschen
+    32.mp3 206_rapunzel
+    33.mp3 207_rohrdommel_und_wiedehopf
+    34.mp3 208_rotkaeppchen
+    35.mp3 209_rumpelstilzchen
+    36.mp3 210_schneeweisschen_und_rosenrot
+    37.mp3 214_spindel_weberschiffchen_und_nadel
+    38.mp3 215_strohhalm_kohle_und_bohne
+==> peterchens_mondfahrt_librivox
+    01.mp3 01 - Die Geschichte der Sumsemanns
+    02.mp3 02 - In der Kinderstube
+    03.mp3 03 - Der Flug nach der Sternenwiese
+    04.mp3 04 - Die Sternenwiese
+    05.mp3 05 - Die Schlittenfahrt auf der Milchstrasse
+    06.mp3 06 - Das Schloss der Nachtfee
+    07.mp3 07 - Die Ankunft der Kinder im Schloss der Nachtfee
+    08.mp3 08 - Der Ritt auf dem grossen Baeren
+    09.mp3 09 - Die Weihnachtswiese
+    10.mp3 10 - Das Osternest
+    11.mp3 11 - Die Mondkanone
+    12.mp3 12 - Der Kampf mit dem Mondmann
+    13.mp3 13 - Das Beinchen
+    14.mp3 14 - Wieder daheim
+==> verwandlung_mw_0811_librivox
+    01.mp3 Abschnitt 1
+    02.mp3 Abschnitt 2
+    03.mp3 Abschnitt 3
+==> kleider_machen_leute_librivox
+    01.mp3 Teil 1
+    02.mp3 Teil 2
+    03.mp3 Teil 3
+Fertig: 6 Hörbücher
