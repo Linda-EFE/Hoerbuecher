@@ -1,0 +1,72 @@
+{
+ "hinweis": "Kinderlieder für die Kategorie 'Kinderlieder'. Wird nicht von den GitHub Actions überschrieben.",
+ "kinderlieder": [
+  {
+   "id": "kinderlieder_spieluhr",
+   "titel": "Kinderlieder zum Mitsingen",
+   "autor": "Volkslieder · Spieluhr & Klavier",
+   "beschreibung": "Fünf bekannte Kinderlieder als Instrumentalversion zum Mitsingen – mit Spieluhr und Klavier, jedes Lied dreimal hintereinander. Den Liedtext zum Mitsingen siehst du beim Abspielen unter der Liste. Melodien und Texte sind gemeinfrei, die Aufnahmen wurden für diese Seite erzeugt.",
+   "kategorie": "Kinderlieder",
+   "cover": "audio/kinderlieder_spieluhr/cover.jpg",
+   "quelle": "https://de.wikipedia.org/wiki/Kinderlied",
+   "herkunft": "Im Repository gespeichert · eigene Instrumentalaufnahmen",
+   "kapitel": [
+    {
+     "titel": "Alle meine Entchen",
+     "datei": "audio/kinderlieder_spieluhr/01.mp3",
+     "dauer": 80,
+     "text": "1. Alle meine Entchen\nschwimmen auf dem See,\nschwimmen auf dem See,\nKöpfchen in das Wasser,\nSchwänzchen in die Höh'.\n\n2. Alle meine Täubchen\ngurren auf dem Dach,\ngurren auf dem Dach,\nfliegt eins in die Lüfte,\nfliegen alle nach.\n\n3. Alle meine Hühner\nscharren in dem Stroh,\nscharren in dem Stroh,\nfinden sie ein Körnchen,\nsind sie alle froh."
+    },
+    {
+     "titel": "Hänschen klein",
+     "datei": "audio/kinderlieder_spieluhr/02.mp3",
+     "dauer": 110,
+     "text": "Hänschen klein\nging allein\nin die weite Welt hinein.\nStock und Hut\nsteht ihm gut,\nist gar wohlgemut.\nAber Mutter weinet sehr,\nhat ja nun kein Hänschen mehr.\nDa besinnt\nsich das Kind,\neilt nach Haus geschwind.\n\n(Die Melodie kommt dreimal – zum Mitsingen.)"
+    },
+    {
+     "titel": "Bruder Jakob",
+     "datei": "audio/kinderlieder_spieluhr/03.mp3",
+     "dauer": 75,
+     "text": "Bruder Jakob, Bruder Jakob,\nschläfst du noch? Schläfst du noch?\nHörst du nicht die Glocken?\nHörst du nicht die Glocken?\nDing, dang, dong!\nDing, dang, dong!\n\n(Beim 2. und 3. Mal als Kanon: Die zweite Stimme beginnt, wenn die erste bei „Schläfst du noch?“ ist.)"
+    },
+    {
+     "titel": "Guten Abend, gut' Nacht",
+     "datei": "audio/kinderlieder_spieluhr/04.mp3",
+     "dauer": 122,
+     "text": "1. Guten Abend, gut' Nacht,\nmit Rosen bedacht,\nmit Näglein besteckt,\nschlupf unter die Deck'.\nMorgen früh, wenn Gott will,\nwirst du wieder geweckt.\n\n2. Guten Abend, gut' Nacht,\nvon Englein bewacht,\ndie zeigen im Traum\ndir Christkindleins Baum.\nSchlaf nun selig und süß,\nschau im Traum 's Paradies.\n\n(Melodie: Johannes Brahms)"
+    },
+    {
+     "titel": "Twinkle, Twinkle, Little Star",
+     "datei": "audio/kinderlieder_spieluhr/05.mp3",
+     "dauer": 95,
+     "text": "Twinkle, twinkle, little star,\nhow I wonder what you are!\nUp above the world so high,\nlike a diamond in the sky.\nTwinkle, twinkle, little star,\nhow I wonder what you are!\n\n(Englisches Kinderlied – auf Deutsch singt man dieselbe Melodie als „Morgen kommt der Weihnachtsmann“.)"
+    }
+   ]
+  },
+  {
+   "id": "kinderwaldmusik",
+   "titel": "Kinderwaldmusik",
+   "autor": "Franziska Näther",
+   "beschreibung": "Neue Kinderlieder rund um Wald und Natur von Franziska Näther. Die Lieder werden als Video von YouTube abgespielt. Lizenz: CC BY-NC-SA 4.0 – Lieder und Videos © Franziska Näther, kinderwaldmusik.de.",
+   "kategorie": "Kinderlieder",
+   "cover": "audio/kinderwaldmusik/cover.jpg",
+   "quelle": "https://kinderwaldmusik.de/lieder/",
+   "herkunft": "Video von YouTube · Lieder von Franziska Näther (CC BY-NC-SA 4.0)",
+   "kapitel": [
+    {
+     "titel": "Regina Regenwurm",
+     "youtube": "nQPJytB_WxI",
+     "start": 43
+    },
+    {
+     "titel": "Miau Miau kleine Katze",
+     "youtube": "3Vg2F_G72Us"
+    },
+    {
+     "titel": "Der schwitzende Wikinger",
+     "youtube": "yvh_XO1MLyc"
+    }
+   ]
+  }
+ ]
+}

@@ -12,6 +12,16 @@ Private Web-App zum Anhören gemeinfreier **Hörbücher für Kinder bis 10 Jahre
   eingetragen werden – eine Zeile `bezeichner | Kategorie` genügt (Kategorien: Märchen,
   Kindergeschichten, Bildergeschichten & Reime, Weihnachten).
 
+## Kinderlieder
+In der Kategorie **🎵 Kinderlieder** (Datei `kinderlieder.json`, wird von den Actions nicht überschrieben):
+- **Kinderlieder zum Mitsingen** (`audio/kinderlieder_spieluhr/`): 5 gemeinfreie Lieder (Alle meine Entchen, Hänschen klein,
+  Bruder Jakob, Guten Abend gut' Nacht, Twinkle Twinkle Little Star) als selbst erzeugte Instrumentalversionen
+  (Spieluhr & Klavier, je dreimal). Beim Abspielen wird der Liedtext angezeigt.
+- **Kinderwaldmusik** von Franziska Näther ([kinderwaldmusik.de](https://kinderwaldmusik.de/lieder/), Lizenz CC BY-NC-SA 4.0):
+  3 Lieder, die als YouTube-Video eingebettet sind (nicht kopiert).
+- Weitere Lieder: in `kinderlieder.json` einen Eintrag ergänzen – mit `"datei"` (MP3 im Repository) oder `"youtube"` (Video-ID).
+  Ein optionales Feld `"text"` zeigt den Liedtext an.
+
 ## Funktionen
 - Übersicht aller Hörbücher mit Cover und Knopf
 - Suche (Titel, Autor, Sprecher, Kapitel), Kategorien, Filter Gespeichert/Online, Sortierung

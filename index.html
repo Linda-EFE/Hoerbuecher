@@ -101,6 +101,22 @@
   .beschreibung.zu { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .mehr { background: none; border: 0; color: var(--accent); padding: 0; font-size: 14px; margin: -12px 0 16px; }
   .kapitel-liste { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  /* Kinderlieder: Liedtext und Video */
+  .liedtext { background: var(--bg-2); border-radius: 14px; padding: 16px 18px; margin: 18px 0 6px; }
+  .liedtext h3 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+  .liedtext p { margin: 0; white-space: pre-line; font-size: 18px; line-height: 1.55; }
+  .video { position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.88); display: flex; flex-direction: column;
+    justify-content: center; padding: calc(env(safe-area-inset-top, 0px) + 16px) 16px calc(env(safe-area-inset-bottom, 0px) + 16px); }
+  .video[hidden] { display: none; }
+  .video .v-kopf { display: flex; align-items: center; gap: 12px; max-width: 900px; width: 100%; margin: 0 auto 12px; }
+  .video .v-titel { flex: 1; font-family: Fraunces, Georgia, serif; font-size: 20px; }
+  .video .v-zu { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px; }
+  .video .v-rahmen { position: relative; width: 100%; max-width: 900px; margin: 0 auto; aspect-ratio: 16 / 9; background: #000; border-radius: 12px; overflow: hidden; }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video .v-nav { display: flex; justify-content: space-between; gap: 12px; max-width: 900px; width: 100%; margin: 14px auto 0; }
+  .video .v-nav button { flex: 1; background: var(--bg-2); color: inherit; border: 1px solid var(--line); border-radius: 999px; padding: 10px; font-size: 15px; }
+  .video .v-nav button:disabled { opacity: .35; }
+  .video .v-hinweis { max-width: 900px; margin: 10px auto 0; color: var(--muted); font-size: 13px; text-align: center; }
   .kapitel {
     width: 100%; display: flex; align-items: center; gap: 14px; text-align: left;
     background: none; border: 0; border-bottom: 1px solid var(--line); padding: 14px 4px;
@@ -231,7 +247,7 @@
       <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26a16 16 0 0 1 32 0" fill="none" stroke="#e8a24a" stroke-width="4" stroke-linecap="round"/><rect x="5" y="25" width="9" height="15" rx="4" fill="#e8a24a"/><rect x="34" y="25" width="9" height="15" rx="4" fill="#e8a24a"/></svg>
       <h1>Hörbücher</h1>
     </div>
-    <p class="sub">Hörbücher für Kinder bis 10 Jahre</p>
+    <p class="sub">Hörbücher und Kinderlieder für Kinder bis 10 Jahre</p>
     <div class="filter">
       <label class="suchfeld">
         <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -264,7 +280,7 @@
   <header class="top" style="padding-top: calc(env(safe-area-inset-top, 0px) + 10px)">
     <button class="zurueck" id="zurueck" aria-label="Zurück zur Übersicht">
       <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Alle Hörbücher
+      <span id="d-zurueck-text">Alle Hörbücher</span>
     </button>
   </header>
   <div class="detail-kopf">
@@ -279,7 +295,8 @@
   <p class="beschreibung zu" id="d-beschreibung"></p>
   <button class="mehr" id="d-mehr" hidden>Mehr anzeigen</button>
   <ol class="kapitel-liste" id="d-kapitel"></ol>
-  <p class="quelle"><span id="d-herkunft"></span> · LibriVox · gemeinfrei · <a id="d-quelle" target="_blank" rel="noopener">Quelle</a></p>
+  <div class="liedtext" id="d-liedtext" hidden><h3 id="d-liedtitel">Liedtext</h3><p id="d-liedtext-p"></p></div>
+  <p class="quelle"><span id="d-herkunft"></span><span id="d-lizenz"> · LibriVox · gemeinfrei</span> · <a id="d-quelle" target="_blank" rel="noopener">Quelle</a></p>
 </main>
 
 <!-- Player -->
@@ -325,6 +342,14 @@
     <div class="hinweis">Spul-Knöpfe gedrückt halten = schnell spulen</div>
   </div>
 </section>
+
+<!-- Video (Kinderlieder von YouTube) -->
+<div class="video" id="video" hidden role="dialog" aria-label="Video">
+  <div class="v-kopf"><div class="v-titel" id="v-titel"></div><button class="v-zu" id="v-zu">Schließen</button></div>
+  <div class="v-rahmen" id="v-rahmen"></div>
+  <div class="v-nav"><button id="v-vorher">‹ Vorheriges Lied</button><button id="v-naechster">Nächstes Lied ›</button></div>
+  <div class="v-hinweis" id="v-hinweis"></div>
+</div>
 
 <audio id="audio" preload="metadata"></audio>
 <div class="meldung" id="meldung" hidden role="alert"></div>
@@ -401,10 +426,10 @@
   function zeigeKategorien() {
     const zaehler = {};
     buecher.forEach(b => { zaehler[b.kategorie] = (zaehler[b.kategorie] || 0) + 1; });
-    const reihenfolge = ['Märchen', 'Kindergeschichten', 'Bildergeschichten & Reime', 'Weihnachten', 'Русские сказки'];
+    const reihenfolge = ['Kinderlieder', 'Märchen', 'Kindergeschichten', 'Bildergeschichten & Reime', 'Weihnachten', 'Русские сказки'];
     const namen = ['Alle', ...reihenfolge.filter(k => zaehler[k]), ...Object.keys(zaehler).filter(k => !reihenfolge.includes(k))];
     $('kategorien').innerHTML = namen.map(k =>
-      `<button class="chip${k === filter.kategorie ? ' an' : ''}" data-k="${esc(k)}">${esc(k)}${k !== 'Alle' ? ` <span style="opacity:.7">${zaehler[k]}</span>` : ''}</button>`).join('');
+      `<button class="chip${k === filter.kategorie ? ' an' : ''}" data-k="${esc(k)}">${k === 'Kinderlieder' ? '🎵 ' : ''}${esc(k)}${k !== 'Alle' ? ` <span style="opacity:.7">${zaehler[k]}</span>` : ''}</button>`).join('');
   }
   $('kategorien').addEventListener('click', e => {
     const c = e.target.closest('.chip'); if (!c) return;
@@ -443,7 +468,9 @@
     if (filter.sortierung === 'beliebt' && !worte.length) {
       gefiltert.sort((a, b) => (!!stand[b.id]) - (!!stand[a.id]));
     }
-    $('anzahl').textContent = gefiltert.length === 1 ? '1 Hörbuch' : `${gefiltert.length} Hörbücher`;
+    $('anzahl').textContent = filter.kategorie === 'Kinderlieder'
+      ? (gefiltert.length === 1 ? '1 Liederalbum' : `${gefiltert.length} Liederalben`)
+      : (gefiltert.length === 1 ? '1 Hörbuch' : `${gefiltert.length} Hörbücher`);
     angezeigt = 0;
     $('liste').innerHTML = gefiltert.length ? '' : '<li class="leer">Keine passenden Hörbücher gefunden.</li>';
     mehrAnzeigen();
@@ -493,7 +520,9 @@
     $('d-mehr').hidden = !b.beschreibung || b.beschreibung.length < 180;
     $('d-mehr').textContent = 'Mehr anzeigen';
     $('d-quelle').href = b.quelle;
-    $('d-herkunft').textContent = b.lokal ? 'Im Repository gespeichert' : 'Gestreamt vom Internet Archive';
+    $('d-herkunft').textContent = b.herkunft || (b.lokal ? 'Im Repository gespeichert' : 'Gestreamt vom Internet Archive');
+    $('d-lizenz').hidden = !!b.herkunft;
+    $('d-zurueck-text') && ($('d-zurueck-text').textContent = b.kategorie === 'Kinderlieder' ? 'Zur Übersicht' : 'Alle Hörbücher');
     zeigeKapitel();
   }
   function zeigeKapitel() {
@@ -506,9 +535,14 @@
       return `<li><button class="kapitel${aktiv ? ' aktiv' : ''}" data-i="${i}">
         <span class="nr">${i + 1}</span>
         <span class="k-titel">${esc(k.titel)}${gemerkt ? `<span class="fortschritt"><i style="width:${prozent}%"></i></span>` : ''}</span>
-        <span class="k-dauer">${k.dauer ? zeit(k.dauer) : ''}</span>
+        <span class="k-dauer">${k.youtube ? '▶ Video' : k.dauer ? zeit(k.dauer) : ''}</span>
       </button></li>`;
     }).join('');
+    // Liedtext des gerade gespielten (sonst des ersten) Liedes zeigen
+    const nr = aktBuch === b ? aktIndex : 0;
+    const lied = b.kapitel[nr];
+    $('d-liedtext').hidden = !(lied && lied.text);
+    if (lied && lied.text) { $('d-liedtitel').textContent = 'Liedtext · ' + lied.titel; $('d-liedtext-p').textContent = lied.text; }
   }
   $('d-kapitel').addEventListener('click', e => {
     const k = e.target.closest('.kapitel'); if (!k) return;
@@ -561,6 +595,7 @@
 
   function spiele(b, i, pos = 0) {
     if (i < 0 || i >= b.kapitel.length) return;
+    if (b.kapitel[i].youtube) return zeigeVideo(b, i);
     aktBuch = b; aktIndex = i;
     const k = b.kapitel[i];
     $('meldung').hidden = true;
@@ -580,6 +615,25 @@
     zeigeKapitel();
     mediaSession(b, k);
   }
+
+  // ---------- Video (Kinderlieder von YouTube) ----------
+  let videoBuch = null, videoIndex = 0;
+  function zeigeVideo(b, i) {
+    audio.pause();
+    videoBuch = b; videoIndex = i;
+    const k = b.kapitel[i];
+    $('v-titel').textContent = k.titel;
+    $('v-hinweis').textContent = b.autor + ' · ' + (b.herkunft || '');
+    $('v-rahmen').innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(k.youtube)}?autoplay=1&playsinline=1&rel=0${k.start ? '&start=' + k.start : ''}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen title="${esc(k.titel)}"></iframe>`;
+    $('v-vorher').disabled = i === 0;
+    $('v-naechster').disabled = i >= b.kapitel.length - 1;
+    $('video').hidden = false;
+  }
+  function schliesseVideo() { $('video').hidden = true; $('v-rahmen').innerHTML = ''; videoBuch = null; }
+  $('v-zu').addEventListener('click', schliesseVideo);
+  $('v-vorher').addEventListener('click', () => videoBuch && videoIndex > 0 && zeigeVideo(videoBuch, videoIndex - 1));
+  $('v-naechster').addEventListener('click', () => videoBuch && videoIndex < videoBuch.kapitel.length - 1 && zeigeVideo(videoBuch, videoIndex + 1));
+  window.addEventListener('hashchange', () => { if (!$('video').hidden) schliesseVideo(); });
 
   function vorher() {
     if (!aktBuch) return;
@@ -733,9 +787,13 @@
       });
     }))
     .catch(() => []);
-  Promise.all([lokal, online]).then(([a, b]) => {
+  const lieder = fetch('kinderlieder.json', { cache: 'no-cache' }).then(r => r.json())
+    .then(d => (d.kinderlieder || []).map(b => vorbereiten({ ...b, sprache: 'de', kategorie: 'Kinderlieder',
+      lokal: !b.kapitel.some(k => k.youtube), beliebt: Infinity })))
+    .catch(() => []);
+  Promise.all([lokal, online, lieder]).then(([a, b, c]) => {
     const ids = new Set(a.map(x => x.id));
-    buecher = [...a, ...b.filter(x => !ids.has(x.id))];
+    buecher = [...c, ...a, ...b.filter(x => !ids.has(x.id))];
     if (!buecher.length) { $('liste').innerHTML = '<li class="leer">Die Hörbuchliste konnte nicht geladen werden.</li>'; return; }
     zeigeKategorien();
     route();
